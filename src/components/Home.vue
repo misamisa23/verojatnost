@@ -2,34 +2,31 @@
 <div>
   <div v-if="showMenu">
     <h1>{{ msg }}</h1>
-    <div v-for="(content, index) in chapters" :key="index">
-      <div v-for="(lekcii,predavanje) in content" :key="predavanje">
-        <p class="predavanje">{{ predavanje }}</p>
-        <div v-for="(lekcija,indeks) in lekcii" :key="indeks"> 
-          <p @click="openLesson(lekcija.id, lekcija.name )" class="lekcija">{{ lekcija.id }} {{ lekcija.name }} </p>
-        </div>
-        </div>
-      </div>
+    <div v-for="(value, key) in chapters" :key="key">
+          <p class="predavanje">{{ value.brojpredavanje }}</p>
+             <div v-for="(lekcija, k) in value.content" :key="k">
+               <p @click="openLesson(lekcija.id, lekcija.name )" class="lekcija">{{ lekcija.id }} {{ lekcija.name }} </p>
+            </div>
     </div>
+  </div>
 
     <div v-if="showLesson">
       <p>{{openedLesson}} {{openedLessonName}}</p>
-      <div v-for="(value, key) in material[0]" :key="key">
-          <div v-if="key == openedLesson">
-             <div v-for="(v, k) in value" :key="k">
-                
-                         <vue-flashcard 
-                      :imgBack="value[k].imageback"
-                      :imgFront="value[k].imagefront" 
-                      headerFront="Прашање" 
-                      textSizeFront="1.3em" 
-                      textSizeBack="1.3em" 
-                      headerBack="Одговор" 
-                      footerFront="кликни за да провериш" 
-                      footerBack="кликни за да затвориш"
-                      :front="value[k].question" 
-                      :back="value[k].answer"></vue-flashcard>
-
+      <div v-for="(value, key) in material" :key="key">
+          <div v-if="value.lessonid == openedLesson">
+             <div v-for="(v, k) in value.content" :key="k">
+                <vue-flashcard 
+                :imgBack="value.content[k].imageback"
+                :imgFront="value.content[k].imagefront" 
+                headerFront="Прашање" 
+                textSizeFront="1.3em" 
+                textSizeBack="1.3em" 
+                headerBack="Одговор" 
+                footerFront="кликни за да провериш" 
+                footerBack="кликни за да затвориш"
+                :front="value.content[k].question" 
+                :back="value.content[k].answer">
+                </vue-flashcard>
               </div>
           </div>
       </div>
@@ -112,6 +109,7 @@ h3 {
   color:rgb(9, 105, 150);
   cursor: pointer;
   font-weight: 600;
+  display:inline-block;
 }
 .term {
   text-decoration: underline;
