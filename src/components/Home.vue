@@ -17,12 +17,19 @@
       <div v-for="(value, key) in material[0]" :key="key">
           <div v-if="key == openedLesson">
              <div v-for="(v, k) in value" :key="k">
-                  <div v-for="(def, term) in v" :key="term">
-                     <vue-flashcard headerFront="Прашање" textSizeFront="1.3em" textSizeBack="1.3em" headerBack="Одговор" footerFront="кликни за да провериш" footerBack="кликни за да затвориш"
-                      :front="term" 
-          :back="def">
-</vue-flashcard>
-                  </div>
+                
+                         <vue-flashcard 
+                      :imgBack="value[k].imageback"
+                      :imgFront="value[k].imagefront" 
+                      headerFront="Прашање" 
+                      textSizeFront="1.3em" 
+                      textSizeBack="1.3em" 
+                      headerBack="Одговор" 
+                      footerFront="кликни за да провериш" 
+                      footerBack="кликни за да затвориш"
+                      :front="value[k].question" 
+                      :back="value[k].answer"></vue-flashcard>
+
               </div>
           </div>
       </div>
@@ -58,7 +65,7 @@ export default {
     vueFlashcard
      },
   computed: {
-     // contains only Alex and James
+     
   },
   mounted: function(){
     // console.log(this.chapters)
@@ -79,7 +86,9 @@ export default {
       this.showMenu = true;
       this.openedLesson = null;
       this.openedLessonName = null;
-    }
+    },
+
+    
 
    }
 
