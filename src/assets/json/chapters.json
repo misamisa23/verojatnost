@@ -4,11 +4,13 @@
             "brojpredavanje":"Предавање 1",
             "content": [
                 {
+                    "usefulid": "1",
                     "id": "1.1",
                     "name": "Експерименти и случајни настани",
                     "depth": "2"
                 },
                 {
+                    "usefulid": "2",
                     "id": "1.2",
                     "name": "Дефиниција на веројатност и својства",
                     "depth": "2"
@@ -19,6 +21,7 @@
             "brojpredavanje":"Предавање 2",
             "content": [
                 {
+                    "usefulid": "3",
                     "id": "2.",
                     "name": "Условна веројатност и независност",
                     "depth": "1"
@@ -29,6 +32,7 @@
             "brojpredavanje":"Предавање 3",
             "content": [
                 {
+                    "usefulid": "4",
                     "id": "3.",
                     "name": "Бернулиева шема",
                     "depth": "1"
@@ -39,6 +43,7 @@
             "brojpredavanje":"Предавање 4",
             "content": [
                 {
+                    "usefulid": "5",
                     "id": "4.",
                     "name": "Случајни променливи",
                     "depth": "1"
@@ -49,6 +54,7 @@
             "brojpredavanje":"Предавање 5",
             "content": [
                 {
+                    "usefulid": "5",
                     "id": "5.",
                     "name": "Случајни вектори",
                     "depth": "1"
@@ -59,6 +65,7 @@
             "brojpredavanje":"Предавање 6",
             "content": [
                 {
+                    "usefulid": "6",
                     "id": "6.",
                     "name": "Функции од случајни променливи",
                     "depth": "1"

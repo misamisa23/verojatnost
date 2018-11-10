@@ -2,43 +2,46 @@
 <div>
   <div v-if="showMenu">
     <h1>{{ msg }}</h1>
-    <div v-for="(value, key) in chapters" :key="key">
-          <p class="predavanje">{{ value.brojpredavanje }}</p>
-             <div v-for="(lekcija, k) in value.content" :key="k">
-               <p @click="openLesson(lekcija.id, lekcija.name )" class="lekcija">{{ lekcija.id }} {{ lekcija.name }} </p>
-            </div>
-    </div>
+    <div v-for="(value, key) in material" :key="key">
+          <p @click="openLesson(value.usefulid)" class="lekcija" >{{ value.lessonid }} {{ value.name }}</p>
+  </div>
   </div>
 
     <div v-if="showLesson">
-      <p>{{openedLesson}} {{openedLessonName}}</p>
-      <div v-for="(value, key) in material" :key="key">
-          <div v-if="value.lessonid == openedLesson">
-             <div v-for="(v, k) in value.content" :key="k">
+      
+      <div v-for="(value, key) in material.filter(item => item.usefulid == openedLessonUseful)" :key="key">
+         <p>{{value.lessonid}} {{value.name}}</p>
+<div v-for="(prasanje, k) in value.sodrzina" :key="k">
+      
                 <vue-flashcard 
-                :imgBack="value.content[k].imageback"
-                :imgFront="value.content[k].imagefront" 
+                :imgBack="value.sodrzina[k].imageback"
+                :imgFront="value.sodrzina[k].imagefront" 
                 headerFront="Прашање" 
                 textSizeFront="1.3em" 
                 textSizeBack="1.3em" 
                 headerBack="Одговор" 
                 footerFront="кликни за да провериш" 
                 footerBack="кликни за да затвориш"
-                :front="value.content[k].question" 
-                :back="value.content[k].answer">
+                :front="value.sodrzina[k].question" 
+                :back="value.sodrzina[k].answer">
                 </vue-flashcard>
               </div>
-          </div>
+          
+
       </div>
-      <p @click="backToMenu()" class="lekcija">Назад кон менито</p>
+  
+      <span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон менито </span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span>
+    
+            
     </div>
+    <back-to-top text="^"></back-to-top>
   </div>
 </template>
 
 <script>
-import Chapters from "../assets/json/chapters.json"
 import Material from "../assets/json/material.json"
-import vueFlashcard from 'vue-flashcard';
+import vueFlashcard from './Flashcard.vue'
+import BackToTop from './BackToTop.vue'
 
 
 export default {
@@ -48,20 +51,23 @@ export default {
   },
   data() {
     return {
-      chapters: Chapters,
       material: Material,
       showMenu: true,
       showLesson: false,
       openedLesson: null,
       openedLessonName: null,
+      openedLessonUseful: null,
       keys: null,
       showDef: []
     }
   },
   components : { 
-    vueFlashcard
+    vueFlashcard,
+    BackToTop
      },
   computed: {
+   
+  
      
   },
   mounted: function(){
@@ -70,12 +76,17 @@ export default {
     this.keys = Object.keys( this.material[0] );
   },
   methods: {
-
-    openLesson(id, name){
+    scrollToTop() {
+                window.scrollTo(0,0);
+           },
+           
+    openLesson(id){
       this.showMenu = false;
-      this.openedLesson = id;
+      // this.openedLesson = lekcija.lessonid;
+      this.openedLessonUseful = id;
       this.showLesson = true;
-      this.openedLessonName = name;
+      this.scrollToTop();
+      // this.openedLessonName = lekcija.name;
     },
 
     backToMenu(){
@@ -83,8 +94,23 @@ export default {
       this.showMenu = true;
       this.openedLesson = null;
       this.openedLessonName = null;
+      this.openedLessonUseful = null;
     },
-
+    
+    nextLesson(){
+        let last = this.material[Object.keys(this.material)[Object.keys(this.material).length - 1]] 
+        if (Number(this.openedLessonUseful) < Number(last.usefulid))
+        this.openLesson(String(Number(this.openedLessonUseful) + 1))
+        else
+        this.openLesson(this.openedLessonUseful)
+    },
+    prevLesson(){
+        if (Number(this.openedLessonUseful) > 1)
+        this.openLesson(String(Number(this.openedLessonUseful) - 1))
+        else
+        this.openLesson(this.openedLessonUseful)
+       
+    }
     
 
    }
@@ -116,5 +142,8 @@ h3 {
   cursor: pointer;
   font-weight: 600;
   color:rgb(23, 146, 70);
+}
+.spacing {
+  margin: 5px;
 }
 </style>
