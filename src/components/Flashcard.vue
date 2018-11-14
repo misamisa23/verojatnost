@@ -12,7 +12,7 @@
             <div class="card-header"> {{headerBack}}</div>
             <div class="card-content left">
                 <p v-html="back" v-bind:style="{fontSize: textSizeBack, fontWeight: 'bold'}"></p>
-                <img class="center-margin" v-if="imgBack!=''" :src="imgBack">
+                <img class="center-margin img-back" v-if="imgBack!=''" :src="imgBack">
             </div>
             <div class="card-footer">{{footerBack}}</div>
         </div>
@@ -93,6 +93,10 @@ export default {
 
 .left {
     text-align: left;
+}
+
+.img-back {
+    max-width:80%;
 }
 
 .center-margin {

@@ -154,86 +154,114 @@
        "name":"Дефиниција на веројатност и својства",
        "sodrzina":[
           {
+             "id":"21",
              "question":"Дефиниција на σ-алгебра (сигма алгебра)",
              "answer":"Нека F е фамилија подмножества од множеството елементарни настани Ω, односно F е фамилија случајни настани во врска со дадениот експеримент. Фамилијата F се нарекува σ-алгебра од подмножества на Ω, ако ги задоволува следниве три услови:",
              "imagefront":"",
              "imageback":"https://i.imgur.com/sRIWyur.png"
           },
           {
+            "id":"22",
              "question":"Што се елементите на една σ-алгебра?",
              "answer":"Елементите на σ-алгебра се нарекуваат случајни настани. <br> <p> од σ.1 следува дека Ω e случаен настан, кој се нарекува сигурен настан. <br> од σ.2 следува дека ако А е случаен настан, тогаш и <span style='text-decoration:overline'>A</span> e случаен настан. <br> од σ.3 следува дека ако А<sub>1</sub>,А<sub>2</sub>... се  случајни настани тогаш и нивниот преброив збир е случаен настан. </p>",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"22",
              "question":"Својства на σ-алгебра ",
              "answer":"За секоја σ-алгебра F точни се следниве својства:",
              "imagefront":"",
              "imageback":"https://i.imgur.com/BH00Wk2.png"
           },
           {
+            "id":"23",
              "question":"Доказ на теорема i) (прво својство)",
              "answer":"Со користење на σ.1 и σ.1 од дефиницијата за σ-алгебра, се добива дека невозможниот настан е исто така случаен настан.",
              "imagefront":"",
              "imageback":"https://i.imgur.com/Kne2MCB.png"
           },
           {
+            "id":"24",
              "question":"Доказ на теорема ii) (второ својство)",
              "answer":"",
              "imagefront":"",
              "imageback":"https://i.imgur.com/dAEbAQU.png"
           },
           {
+            "id":"25",
              "question":"Доказ на теорема iii) (трето својство)",
              "answer":"",
              "imagefront":"",
              "imageback":"https://i.imgur.com/dAEbAQU.png"
           },
           {
-             "question":"",
-             "answer":"",
+            "id":"26",
+             "question":"Дефиниција на веројатност",
+             "answer":"Нека F е σ-алгебра од подмножества од Ω. Пресликувањето P: F -> R, каде R е множество реални броеви се нарекува веројатност, ако се задоволени следните три услови:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/SjnkC48.png"
+          },
+          {
+            "id":"27",
+             "question":"Простор на веројатност / Аксиоматика на Колмогоров",
+             "answer":"Подредената тројка (Ω,F,P), каде Ω е произволно непразно множество, F e σ-алгебра од подмножества на Ω и P е веројатност што ги задоволува аксиомите P1, P2 и P3, се нарекува простор на веројатност.",
              "imagefront":"",
              "imageback":""
           },
           {
-             "question":"",
-             "answer":"",
+            "id":"28",
+             "question":"Својства на веројатноста",
+             "answer":"Веројатноста P ги има следните својства:",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/DMRug0s.png"
           },
           {
-             "question":"",
+            "id":"29",
+             "question":"Доказ на својство i) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/ORpMHK1.png"
           },
           {
-             "question":"",
+            "id":"30",
+             "question":"Доказ на својство ii) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/DVttyWu.png"
           },
           {
-             "question":"",
+            "id":"31",
+             "question":"Доказ на својство iii) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/pcXDZOY.png"
           },
           {
-             "question":"",
+            "id":"32",
+             "question":"Доказ на својство iv) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/wMhLwi3.png"
           },
           {
-             "question":"",
+            "id":"33",
+             "question":"Доказ на својство v) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/akHuTMK.png"
           },
           {
-             "question":"",
+            "id":"34",
+             "question":"Доказ на својство vi) на веројатност",
              "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/B5hI3gu.png"
+          },
+          {
+            "id":"35",
+             "question":"Класична дефиниција на веројатност",
+             "answer":"Нека Ω = {Е<sub>1</sub>,Е<sub>2</sub>,...,Е<sub>n</sub>} е дадено конечно множество елементарни настани и нека секој од нив има еднаква веројатност да се појави т.е. P(E<sub>i</sub>) = 1/n, i=1,2,...,n. Ако А е случаен настан во врска со дадениот експеримент во кој се содржат k елементарни настани тогаш веројатноста на настанот А се определува со P(A)= k/n.",
              "imagefront":"",
              "imageback":""
           }
@@ -246,22 +274,102 @@
        "name":"Условна веројатност и независност",
        "sodrzina":[
           {
-             "question":"",
+            "id":"36",
+             "question":"Дефиниција на условна веројатност",
+             "answer":"Условната веројатност на настанот А при услов В се означува со P(A|B) и се дефинира со:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/QKKHsDC.png"
+          },
+          {
+            "id":"37",
+             "question":"Како може да се претстави производ на два настани со помош на условни веројатности?",
              "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/TxOXw4A.png"
+          },
+          {
+            "id":"38",
+             "question":"Веројатност од производ на n настани",
+             "answer":"За произволни n настани А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub> ∈ F, веројатноста на нивниот производ може да се определи со формулата:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/sPsbJAs.png"
+          },
+          {
+            "id":"39",
+             "question":"Дефиниција на независност на настан А од настан В",
+             "answer":"За настанот А велиме дека е независен од настанот В ако:  <p style='text-align:center'>P(A|B) = P(A).</p> Тоа значи дека појавувањето на настанот В не ја менува веројатноста да се појави настанот А.",
              "imagefront":"",
              "imageback":""
           },
           {
-             "question":"",
-             "answer":"",
+            "id":"40",
+             "question":"Кога два настани се независни?",
+             "answer":"Настаните А и В се независни ако и само ако: <p style='text-align:center'>P(AB) = P(A)P(B)</p>",
              "imagefront":"",
              "imageback":""
           },
           {
-             "question":"",
-             "answer":"",
+            "id":"41",
+             "question":"Што можеме да заклучиме ако знаеме дека два настани се независни? (својство)",
+             "answer":"Ако настаните А и В се независни, тогаш независни се и паровите: А и <span style='text-decoration:overline'>B</span>; <span style='text-decoration:overline'>A</span> и B; како и <span style='text-decoration:overline'>A</span> и <span style='text-decoration:overline'>B</span>",
              "imagefront":"",
              "imageback":""
+          },
+          {
+            "id":"42",
+             "question":"Докажи дека ако настаните А и В се независни тогаш и паровите: А и <span style='text-decoration:overline'>B</span>; <span style='text-decoration:overline'>A</span> и B; како и <span style='text-decoration:overline'>A</span> и <span style='text-decoration:overline'>B</span> се независни.",
+             "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/fvUsku5.png"
+          },
+          {
+            "id":"43",
+             "question":"Дефиниција за независност во целина",
+             "answer":"За настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub> велиме дека се независни во целина, ако за произволен k (2 <= k <= n) и за кој било избор на индекси i<sub>1</sub> < i<sub>2</sub> < ... < i<sub>k</sub> важи:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/wOuHGfZ.png"
+          },
+          {
+            "id":"44",
+             "question":"Дефиниција за независност по парови",
+             "answer":"За настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub> велиме дека се независни по парови ако за произволни i,j ∈ {1,2,...,n} (i != j) A<sub>i</sub> и A<sub>j</sub> се независни настани т.е. важи: <p style='text-align:center'>P(A<sub>i</sub>A<sub>j</sub>) = P(A<sub>i</sub>)P(A<sub>j</sub>)</p>",
+             "imagefront":"",
+             "imageback":""
+          },
+          {
+            "id":"45",
+             "question":"Што можеме да заклучиме ако се независни настаните А<sub>1</sub>,А<sub>2</sub>,..., B<sub>1</sub>,B<sub>2</sub>,...?",
+             "answer":"Тогаш независни се и настаните А<sub>1</sub>,А<sub>2</sub>,..., <span style='text-decoration:overline'>B</span><sub>1</sub>,<span style='text-decoration:overline'>B</span><sub>2</sub>,...",
+             "imagefront":"",
+             "imageback":""
+          },
+          {
+            "id":"46",
+             "question":"Тотална веројатност",
+             "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/sbjvnrd.png"
+          },
+          {
+            "id":"47",
+             "question":"Доказ на формулата за тотална веројатност",
+             "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/A9jWNNa.png"
+          },
+          {
+            "id":"48",
+             "question":"Бајесови формули",
+             "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/zEsaOB7.png"
+          },
+          {
+            "id":"49",
+             "question":"Доказ на Бајесови формули",
+             "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/9gCRmKQ.png"
           }
        ]
     },
@@ -272,18 +380,21 @@
        "name":"Бернулиева шема",
        "sodrzina":[
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
@@ -298,18 +409,21 @@
        "name":"Случајни променливи",
        "sodrzina":[
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
@@ -324,18 +438,21 @@
        "name":"Случајни вектори",
        "sodrzina":[
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
@@ -350,23 +467,55 @@
        "name":"Функции од случајни променливи",
        "sodrzina":[
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           },
           {
+            "id":"",
              "question":"",
              "answer":"",
              "imagefront":"",
              "imageback":""
           }
        ]
-    }
+    },    
+    {
+        "brojpredavanje":"Екстра",
+        "usefulid":"8",
+        "lessonid":"*",
+        "name":"Формули",
+        "sodrzina":[
+           {
+            "id":"",
+              "question":"",
+              "answer":"",
+              "imagefront":"",
+              "imageback":""
+           },
+           {
+            "id":"",
+              "question":"",
+              "answer":"",
+              "imagefront":"",
+              "imageback":""
+           },
+           {
+            "id":"",
+              "question":"",
+              "answer":"",
+              "imagefront":"",
+              "imageback":""
+           }
+        ]
+     }
  ]
