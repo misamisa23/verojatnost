@@ -10,7 +10,8 @@
     <div v-if="showLesson">
       
       <div v-for="(value, key) in material.filter(item => item.usefulid == openedLessonUseful)" :key="key">
-         <p>{{value.lessonid}} {{value.name}}</p>
+        <h2 class="inline">{{value.lessonid}} {{value.name}}</h2> 
+      <p class="center-align"><span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон менито </span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span></p>
 <div v-for="(prasanje, k) in value.sodrzina" :key="k">
       
                 <vue-flashcard 
@@ -30,7 +31,7 @@
 
       </div>
   
-      <span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон менито </span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span>
+      <p class="center-align"><span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон менито </span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span></p>
     
             
     </div>
@@ -129,6 +130,13 @@ h3 {
   font-style: italic;
   font-size: 16px;
 }
+.center-align{
+  text-align:center;
+}
+body {
+  margin:0;
+  padding: 0;
+}
 .lekcija {
   font-size: 14px;
   text-decoration: underline;
@@ -137,6 +145,7 @@ h3 {
   font-weight: 600;
   display:inline-block;
 }
+
 .term {
   text-decoration: underline;
   cursor: pointer;

@@ -4,7 +4,7 @@
             <div class="card-header"> {{headerFront}} </div>
             <div class="card-content center">
                 <p v-html="front" v-bind:style="{fontSize: textSizeFront,fontWeight: 'bold'}"></p>
-                <img v-if="imgFront!=''" :src="imgFront" width="200" height="200">
+                <img v-if="imgFront!=''" :src="imgFront">
             </div>
             <div class="card-footer">{{footerFront}}</div>
         </div>
