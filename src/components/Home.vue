@@ -24,7 +24,8 @@
                 footerFront="кликни за да провериш" 
                 footerBack="кликни за да затвориш"
                 :front="value.sodrzina[k].question" 
-                :back="value.sodrzina[k].answer">
+                :back="value.sodrzina[k].answer"
+                :importance="value.sodrzina[k].importance">
                 </vue-flashcard>
               </div>
           

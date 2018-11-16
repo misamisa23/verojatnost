@@ -10,140 +10,160 @@
              "question":"Што е експеримент?",
              "answer":"Секоја реализација на множество услови <em>S</em> се нарекува <em>опит</em> или <em>експеримент</em>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"low"
           },
           {
              "id":"2",
              "question":"Што значи еден експеримент да е детерминистички?",
              "answer":"Ако исходот на еден експеримент е однапред познат, тогаш тој експеримент се нарекува детерминистички, во спротивно, ако исходот не може со сигурност да се знае однапред, тој експеримент е недетерминистички.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"low"
           },
           {
              "id":"3",
              "question":"Интуитивна дефиниција на случаен настан",
              "answer":"Настанот <em>A</em> во врска со експериментот <em>S</em> се нарекува <em>случаен настан</em> ако се исполнети следниве два услова: <br> <ol><li>Експериментот <em>S</em> може да се повтори при исти услови колку што сакаме пати;</li><li>Релативните фрекфенции на настанот A во секоја од повеќе изведени серии експерименти се броеви кои се приближно еднакви. Тоа значи дека ако се изведат серии од по <em>n<sub>1</sub>,n<sub>2</sub>,...,n<sub>k</sub></em> ексеприменти, тогаш: </li></ol> ",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/HMWQDfo.png"
+             "imageback":"https://i.imgur.com/HMWQDfo.png",
+             "importance":"mid"
           },
           {
              "id":"4",
              "question":"Што е релативна фрекфенција?",
              "answer":"Релативната фрекфенција во една серија екперименти е приближна објективна мерка за можноста за појавување на настанот А. Еднаква е на односот помеѓу бројот на обиди кога се појавил настанот А, и вкупниот број обиди во експериментот.",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/j7MxRHu.png"
+             "imageback":"https://i.imgur.com/j7MxRHu.png",
+             "importance":"mid"
           },
           {
              "id":"5",
              "question":"Што е статистичка (емпириска) веројатност на настанот А?",
              "answer":"Релативните фрекфенции на настанот А за различни серии при изведба на истиот експеримент се разликуваат помеѓу себе, но сепак тие се натрпупуваат околу некој реален број. Реалниот број околу кој се натрупуваат релативните фрекфенции на настанот А се нарекува статистичка (или емпириска) веројатност на настанот A.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"6",
              "question":"Што е сигурен настан?",
              "answer":"Сигурен настан во врска со даден експеримент е настанот кој се појаува при секоја реализација на тој експеримент. Се бележи и со Ω затоа што секој елементарен настан доведува до неговото појавување.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"7",
              "question":"Што е невозможен настан?",
              "answer":"Невозможен настан во врска со даден експеримент е настан што не се појавува никогаш при реализација на дадениот експеримент. Ниеден елементарен настан не доведува до неговото појавување, па ќе го означуваме со ∅",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"8",
              "question":"Дефиниција на елементарен настан",
              "answer":"Елементарен настан во врска со даден експеримент е секој логички исход кој не може да се разложи на други настани. Притоа, при секоја реализација на експериментот се појавува еден и само еден елементарен настан. Множеството од сите вакви настани во врска со еден експеримент се нарекува множество елементарни настани и се означува со Ω (омега)",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
              "id":"9",
              "question":"Каква кардиналност може да има множеството елементарни настани Ω?",
              "answer":"Може да биде конечно, бесконечно преброиво или бесконечно непреброиво множество.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"low"
           },
           {
              "id":"10",
              "question":"Математичка дефиниција на случаен настан",
              "answer":"Случаен настан е произволно подмножество од множеството елементарни настани Ω. Ќе велиме дека се појавил настанот А, ако се појавил некој од елементарните настани кои припаѓаат на подмножеството елементарни настани соодветно на настанот А.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
              "id":"11",
              "question":"Дефиниција на производ на два настани",
              "answer":"Производ на настаните A и B е настан кој се појавува тогаш и само тогаш кога ќе се појават и двата настани A и B. Тој настан е определен со множество елементарни настани што е пресек од множествата елементарни настани на настанот А и на настанот В. Производот на два настани А и В се означува со А∩В или АВ.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
              "id":"12",
              "question":"Дефиниција на дисјунктни настани",
              "answer":"Ако два настани А и В не може да се појават истовремено, тогаш тие се нарекуваат дисјунктни настани (или несогласни настани, исклучувачки настани). Нивниот производ е невозможен настан, односно А∩В = ∅.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
              "id":"13",
              "question":"Дефиниција на збир на два настани",
              "answer":"Збир на настаните А и В е настан кој се појавува тогаш и само тогаш кога ќе се појави барем еден од настаните А и В. Тој настан е определен со множеството елементарни настани што е унија од множествата елементарни настани на настанот А и настанот В. Збирот на два настани А и В во општ случај се означува со A∪B. Доколку настаните се дисјунктни, тогаш нивниот збир се означува со A+B.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"14",
              "question":"Дефиниција на спротивен настан",
              "answer":"Спротивен настан на настанот А е настанот кој се појавува тогаш и само тогаш кога не се појавува настанот А. Овој настан се означува со <span style='text-decoration: overline;'>A</span>. Множеството елементарни настани на настанот <span style='text-decoration: overline;'>A</span> е комплемент на множеството елементарни настани соодветни на настанот А во однос на Ω. <br> За секој настан А важи: <br> <p style='text-align:center;'>А∩<span style='text-decoration: overline;'>A</span> = ∅ <br> A∪<span style='text-decoration: overline;'>A</span> = Ω</p>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"15",
              "question":"Дефиниција на разлика на настани",
              "answer":"Разлика на настаните А и В е настан кој се појавува тогаш и само тогаш кога ќе се појави настанот А, а не се појавува настанот В. Тој настан е определем со множество елементарни настани што е разлика од множествата елементарни настани на настанот а и настанот В. Се бележи A<span style='text-decoration: overline;'>B</span>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"16",
              "question":"Кога велиме дека настанот А го повлекува настанот В?",
              "answer":"Настанот А го повлекува настанот В ако секогаш кога се појавува настанот А се појавува и настанот В. Се пишува A⊆B.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"17",
              "question":"Ако A⊆B и B⊆A, тогаш што можеме да заклучиме за настаните А и В?",
              "answer":"Тогаш велиме дека настаните се еднакви.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"low"
           },
           {
              "id":"18",
              "question":"Дефиниција на збир на повеќе настани",
              "answer":"Збир на настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub>, е настанот кој се појавува тогаш и само тогаш кога ќе се појави барем еден од настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub>. Овој настан се означува со А<sub>1</sub>∪А<sub>2</sub>∪ ... ∪А<sub>n</sub>, а неговото множество елементарни настани е унија од множествата елементарни настани соодветни на секој од настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub>.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"19",
              "question":"Дефиниција на производ на повеќе настани",
              "answer":"Производ на настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub>, е настанот кој се појавува тогаш и само тогаш кога ќе се појават истовремено сите  настани А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub>. Овој настан се означува со А<sub>1</sub>∩А<sub>2</sub>∩ ... ∩А<sub>n</sub> (или А<sub>1</sub>А<sub>2</sub>...А<sub>n</sub>) а неговото множество елементарни настани е пресек од множествата елементарни настани соодветни на секој од настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub>.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
              "id":"20",
              "question":"Дисјунктно разложување на Ω",
              "answer":"Нека А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub> се настани во врска со еден експеримент така што го задоволуваат изразот подолу. Тогаш за настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub> велиме дека се дисјунктно разложување на Ω, односно Ω е дисјунктна сума на настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub>.",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/c36u0SN.png"
+             "imageback":"https://i.imgur.com/c36u0SN.png",
+             "importance":"high"
           }
        ]
     },
@@ -158,112 +178,128 @@
              "question":"Дефиниција на σ-алгебра (сигма алгебра)",
              "answer":"Нека F е фамилија подмножества од множеството елементарни настани Ω, односно F е фамилија случајни настани во врска со дадениот експеримент. Фамилијата F се нарекува σ-алгебра од подмножества на Ω, ако ги задоволува следниве три услови:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/sRIWyur.png"
+             "imageback":"https://i.imgur.com/sRIWyur.png",
+             "importance":"high"
           },
           {
             "id":"22",
              "question":"Што се елементите на една σ-алгебра?",
              "answer":"Елементите на σ-алгебра се нарекуваат случајни настани. <br> <p> од σ.1 следува дека Ω e случаен настан, кој се нарекува сигурен настан. <br> од σ.2 следува дека ако А е случаен настан, тогаш и <span style='text-decoration:overline'>A</span> e случаен настан. <br> од σ.3 следува дека ако А<sub>1</sub>,А<sub>2</sub>... се  случајни настани тогаш и нивниот преброив збир е случаен настан. </p>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
             "id":"22",
              "question":"Својства на σ-алгебра ",
              "answer":"За секоја σ-алгебра F точни се следниве својства:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/BH00Wk2.png"
+             "imageback":"https://i.imgur.com/BH00Wk2.png",
+             "importance":"high"
           },
           {
             "id":"23",
              "question":"Доказ на теорема i) (прво својство)",
              "answer":"Со користење на σ.1 и σ.1 од дефиницијата за σ-алгебра, се добива дека невозможниот настан е исто така случаен настан.",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/Kne2MCB.png"
+             "imageback":"https://i.imgur.com/Kne2MCB.png",
+             "importance":"high"
           },
           {
             "id":"24",
              "question":"Доказ на теорема ii) (второ својство)",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/dAEbAQU.png"
+             "imageback":"https://i.imgur.com/dAEbAQU.png",
+             "importance":"high"
           },
           {
             "id":"25",
              "question":"Доказ на теорема iii) (трето својство)",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/dAEbAQU.png"
+             "imageback":"https://i.imgur.com/dAEbAQU.png",
+             "importance":"high"
           },
           {
             "id":"26",
              "question":"Дефиниција на веројатност",
              "answer":"Нека F е σ-алгебра од подмножества од Ω. Пресликувањето P: F -> R, каде R е множество реални броеви се нарекува веројатност, ако се задоволени следните три услови:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/SjnkC48.png"
+             "imageback":"https://i.imgur.com/SjnkC48.png",
+             "importance":"high"
           },
           {
             "id":"27",
              "question":"Простор на веројатност / Аксиоматика на Колмогоров",
              "answer":"Подредената тројка (Ω,F,P), каде Ω е произволно непразно множество, F e σ-алгебра од подмножества на Ω и P е веројатност што ги задоволува аксиомите P1, P2 и P3, се нарекува простор на веројатност.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
             "id":"28",
              "question":"Својства на веројатноста",
              "answer":"Веројатноста P ги има следните својства:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/DMRug0s.png"
+             "imageback":"https://i.imgur.com/DMRug0s.png",
+             "importance":"high"
           },
           {
             "id":"29",
              "question":"Доказ на својство i) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/ORpMHK1.png"
+             "imageback":"https://i.imgur.com/ORpMHK1.png",
+             "importance":"high"
           },
           {
             "id":"30",
              "question":"Доказ на својство ii) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/DVttyWu.png"
+             "imageback":"https://i.imgur.com/DVttyWu.png",
+             "importance":"high"
           },
           {
             "id":"31",
              "question":"Доказ на својство iii) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/pcXDZOY.png"
+             "imageback":"https://i.imgur.com/pcXDZOY.png",
+             "importance":"high"
           },
           {
             "id":"32",
              "question":"Доказ на својство iv) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/wMhLwi3.png"
+             "imageback":"https://i.imgur.com/wMhLwi3.png",
+             "importance":"high"
           },
           {
             "id":"33",
              "question":"Доказ на својство v) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/akHuTMK.png"
+             "imageback":"https://i.imgur.com/akHuTMK.png",
+             "importance":"high"
           },
           {
             "id":"34",
              "question":"Доказ на својство vi) на веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/B5hI3gu.png"
+             "imageback":"https://i.imgur.com/B5hI3gu.png",
+             "importance":"high"
           },
           {
             "id":"35",
              "question":"Класична дефиниција на веројатност",
              "answer":"Нека Ω = {Е<sub>1</sub>,Е<sub>2</sub>,...,Е<sub>n</sub>} е дадено конечно множество елементарни настани и нека секој од нив има еднаква веројатност да се појави т.е. P(E<sub>i</sub>) = 1/n, i=1,2,...,n. Ако А е случаен настан во врска со дадениот експеримент во кој се содржат k елементарни настани тогаш веројатноста на настанот А се определува со P(A)= k/n.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           }
        ]
     },
@@ -278,98 +314,112 @@
              "question":"Дефиниција на условна веројатност",
              "answer":"Условната веројатност на настанот А при услов В се означува со P(A|B) и се дефинира со:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/QKKHsDC.png"
+             "imageback":"https://i.imgur.com/QKKHsDC.png",
+             "importance":"high"
           },
           {
             "id":"37",
              "question":"Како може да се претстави производ на два настани со помош на условни веројатности?",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/TxOXw4A.png"
+             "imageback":"https://i.imgur.com/TxOXw4A.png",
+             "importance":"mid"
           },
           {
             "id":"38",
              "question":"Веројатност од производ на n настани",
              "answer":"За произволни n настани А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub> ∈ F, веројатноста на нивниот производ може да се определи со формулата:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/sPsbJAs.png"
+             "imageback":"https://i.imgur.com/sPsbJAs.png",
+             "importance":"mid"
           },
           {
             "id":"39",
              "question":"Дефиниција на независност на настан А од настан В",
              "answer":"За настанот А велиме дека е независен од настанот В ако:  <p style='text-align:center'>P(A|B) = P(A).</p> Тоа значи дека појавувањето на настанот В не ја менува веројатноста да се појави настанот А.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
             "id":"40",
              "question":"Кога два настани се независни?",
              "answer":"Настаните А и В се независни ако и само ако: <p style='text-align:center'>P(AB) = P(A)P(B)</p>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
             "id":"41",
              "question":"Што можеме да заклучиме ако знаеме дека два настани се независни? (својство)",
              "answer":"Ако настаните А и В се независни, тогаш независни се и паровите: А и <span style='text-decoration:overline'>B</span>; <span style='text-decoration:overline'>A</span> и B; како и <span style='text-decoration:overline'>A</span> и <span style='text-decoration:overline'>B</span>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
             "id":"42",
              "question":"Докажи дека ако настаните А и В се независни тогаш и паровите: А и <span style='text-decoration:overline'>B</span>; <span style='text-decoration:overline'>A</span> и B; како и <span style='text-decoration:overline'>A</span> и <span style='text-decoration:overline'>B</span> се независни.",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/fvUsku5.png"
+             "imageback":"https://i.imgur.com/fvUsku5.png",
+             "importance":"low"
           },
           {
             "id":"43",
              "question":"Дефиниција за независност во целина",
              "answer":"За настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub> велиме дека се независни во целина, ако за произволен k (2 <= k <= n) и за кој било избор на индекси i<sub>1</sub> < i<sub>2</sub> < ... < i<sub>k</sub> важи:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/wOuHGfZ.png"
+             "imageback":"https://i.imgur.com/wOuHGfZ.png",
+             "importance":"mid"
           },
           {
             "id":"44",
              "question":"Дефиниција за независност по парови",
              "answer":"За настаните А<sub>1</sub>,А<sub>2</sub>,...,А<sub>n</sub> велиме дека се независни по парови ако за произволни i,j ∈ {1,2,...,n} (i != j) A<sub>i</sub> и A<sub>j</sub> се независни настани т.е. важи: <p style='text-align:center'>P(A<sub>i</sub>A<sub>j</sub>) = P(A<sub>i</sub>)P(A<sub>j</sub>)</p>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
             "id":"45",
              "question":"Што можеме да заклучиме ако се независни настаните А<sub>1</sub>,А<sub>2</sub>,..., B<sub>1</sub>,B<sub>2</sub>,...?",
              "answer":"Тогаш независни се и настаните А<sub>1</sub>,А<sub>2</sub>,..., <span style='text-decoration:overline'>B</span><sub>1</sub>,<span style='text-decoration:overline'>B</span><sub>2</sub>,...",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"low"
           },
           {
             "id":"46",
              "question":"Тотална веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/sbjvnrd.png"
+             "imageback":"https://i.imgur.com/sbjvnrd.png",
+             "importance":"high"
           },
           {
             "id":"47",
              "question":"Доказ на формулата за тотална веројатност",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/A9jWNNa.png"
+             "imageback":"https://i.imgur.com/2EcO9pu.png",
+             "importance":"mid"
           },
           {
             "id":"48",
              "question":"Бајесови формули",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/zEsaOB7.png"
+             "imageback":"https://i.imgur.com/zEsaOB7.png",
+             "importance":"high"
           },
           {
             "id":"49",
              "question":"Доказ на Бајесови формули",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/9gCRmKQ.png"
+             "imageback":"https://i.imgur.com/9gCRmKQ.png",
+             "importance":"mid"
           }
        ]
     },
@@ -384,14 +434,16 @@
              "question":"Што е Бернулиева шема?",
              "answer":"Бернулиева шема од n експерименти е серија од n независни и еднакви експерименти во кои се набљудува само појавувањето (или не појавувањето) на одреден настан А. <br> Нека p е веројатноста за појавување на настанот А во секој експеримент, а q = 1 - p = P(<span style='text-decoration:overline'>A</span>) <br> Нека k е фиксен број (0<=k<=n). B<sub>k</sub> е настанот: во Бернулиева шема од n експерименти настанот А ќе се појави точно k пати. Неговата веројатност е: ",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/tmgjc9U.png"
+             "imageback":"https://i.imgur.com/tmgjc9U.png",
+             "importance":"high"
           },
           {
             "id":"51",
              "question":"Како можеме да ја пресметаме веројатноста во Бернулиева шема со n експерименти, А да се појави најмалку m пати, каде m (0<=m<=n)?",
              "answer":"За настаните B<sub>k</sub>, може да се воочи дека B<sub>i</sub>B<sub>j</sub> = ∅, за i != j и B<sub>0</sub> + B<sub>1</sub> + ... + B<sub>n</sub> = Ω, односно B<sub>0</sub>,B<sub>1</sub>,...,B<sub>n</sub> e дисјунктно разложување на Ω. Поради дисјунктноста, веројатноста се определува на следниот начин:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/cQzoaYS.png"
+             "imageback":"https://i.imgur.com/cQzoaYS.png",
+             "importance":"high"
           }
         
        ]
@@ -407,154 +459,232 @@
              "question":"Дефиниција на случајна променлива",
              "answer":"Случајна променлива X дефинирана на просторот на веројатност (Ω, F,P) е функција Х: Ω→R која е F-измерлива т.е. <p style='text-align:center;'>{E|X(E) < x} ∈ F, за секој x ∈ R</p>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
             "id":"53",
              "question":"Дефиниција на функција на распределба на случајна променлива",
              "answer":"Функција на распределба на случајна променлива Х се определува со: <p style='text-align:center;'>F<sub>x</sub>(x) = P{X < x}, x ∈ R </p>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
             "id":"54",
              "question":"Ако F(x) е функција на распределба на случајна променлива Х на одреден интервал (a,b), тогаш како можеме преку функцијата да ја пресметаме веројатноста? (теорема 1)",
              "answer":"Ако F(x) е функција на распределба на случајна променлива Х, тогаш:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/UNmgqKi.png"
+             "imageback":"https://i.imgur.com/UNmgqKi.png",
+             "importance":"mid"
           },
           {
             "id":"55",
              "question":"Докажи дека ако F(x) е функција на распределба на случајна променлива Х, тогаш",
              "answer":"",
              "imagefront":"https://i.imgur.com/UNmgqKi.png",
-             "imageback":"https://i.imgur.com/F7cSKZB.png"
+             "imageback":"https://i.imgur.com/F7cSKZB.png",
+             "importance":"mid"
           },
           {
             "id":"56",
              "question":"Својства на функција на распределба",
              "answer":"Функцијата на распределба на една случајна променлива е:",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/tMEjQYD.png"
+             "imageback":"https://i.imgur.com/tMEjQYD.png",
+             "importance":"high"
           },
           {
             "id":"57",
              "question":"Што можеме да кажеме за точките на прекин на функцијата на распределба?",
              "answer":"Нека Х е произволна случајна променлива и F(x) е нејзината функција на распределба. Ако x<sub>0</sub> е точка на прекин на F(x), тогаш P{X = x<sub>0</sub>} > 0. Aко F(x) е непрекината функција во x<sub>0</sub>, тогаш P{X = x<sub>0</sub>} = 0.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
             "id":"58",
              "question":"Случајна променлива од дискретен тип",
              "answer":"За случајна променлива Х велиме дека е од дискретен тип (или дека Х е дискретна случајна променлива) ако множеството вредности (рангот) на функцијата Х е конечно или преброиво. Притоа, ако Х прима вредности од множеството R<sub>x</sub> = {x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>} (или R<sub>x</sub> = {x<sub>1</sub>,x<sub>2</sub>,...}) со веројатности p<sub>i</sub> = P{X = x<sub>i</sub>}, тогаш &Sigma;p<sub>i</sub>=1.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
             "id":"59",
              "question":"Закон на распределба",
              "answer":"Множеството вредности на една случајна променлива X и соодветните веројатности p<sub>i</sub> го определуваат законот на распределба на дискретната случајна променлива Х.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           },
           {
             "id":"60",
              "question":"Ако е познат законот на распределба на случајната променлива Х, нејзината функција на распределба е еднозначно определена со...?",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/MrIDdrT.png"
+             "imageback":"https://i.imgur.com/MrIDdrT.png",
+             "importance":"mid"
           },
           {
             "id":"61",
              "question":"Ако е позната функцијата на распределба, законот на распределба на определен со...?",
              "answer":"",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/a5TIu19.png"
+             "imageback":"https://i.imgur.com/a5TIu19.png",
+             "importance":"mid"
           },
           {
             "id":"62",
              "question":"Индикатор на настан или Бернулиева распределба - I<sub>A</sub>",
              "answer":"Нека P(A) = p и нека q = 1 - p. <br> <p style='text-align:center'>I<sub>A</sub> -> број на појавувања на настанот А во еден изведен експеримент. R<sub>I<sub>A</sub></sub> = {0,1}</p> Оваа случајна променлива прима вредност 0 ако не се појави настанот А или вредност 1 ако се појави настанот А. Оттука, ",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/rHBSepp.png"
+             "imageback":"https://i.imgur.com/rHBSepp.png",
+             "importance":"high"
           },
           {
             "id":"63",
              "question":"Биномна распределба - X~B(n,p)",
              "answer":"Х - број на појавувања на настанот А во Бернулиева шема со n експерименти. Нејзините параметри се n – број на експерименти и p = Р(А).",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/o999RFr.png"
+             "imageback":"https://i.imgur.com/o999RFr.png",
+             "importance":"high"
           },
           {
             "id":"64",
              "question":"Рамномерна распределба - X~U({x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>})",
              "answer":"За случајната променлива X која прима вредности од конечно множество R<sub>x</sub> = {x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub>} со веројатности p<sub>i</sub> = P{ X = x<sub>i</sub> } = 1/n, i=1,2,...n велиме дека има рамномерна распределба на множеството R<sub>x</sub>",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
             "id":"65",
              "question":"Геометриска распределба - X~Geo(p)",
              "answer":"Се изведува серија од независни и еднакви експерименти се додека не се појави настанот А (притоа p = P(A), q = 1− p ). <p>X – број на изведени експерименти до појавување на настанот А</p> <p style='text-align:center'> p<sub>i</sub> = P{X = i} = (1 -p)<sup>i-1</sup>p, i ∈ {1,2,...} </p> ",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"high"
           },
           {
             "id":"66",
              "question":"Хипергеометриска распределба",
              "answer":"Нека во дадено множество од n различни објекти, m објекти поседуваат одредено својство А (m < n). Од даденото множество од n објекти, случајно се избираат k (k < n). <p>X - број на објекти од избраните k кои го поседуваат својството A.</p> Тогаш R<sub>x</sub> = {max{0,m+k-n},...,min{m,k}}. Притоа,",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/jmRCTMp.png"
+             "imageback":"https://i.imgur.com/jmRCTMp.png",
+             "importance":"high"
           },
           {
             "id":"67",
              "question":"Негативна биномна распределба - X ~ NB(k, p)",
              "answer":"Се изведува серија од независни и еднакви експерименти се додека настанот А не се појави точно к пати ( p = P(A), q = 1− p ) <p>X – број на изведени експерименти. R<sub>x</sub> = {k, k+1, k+2,...}</p> Притоа, ",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/syVeUhi.png"
+             "imageback":"https://i.imgur.com/syVeUhi.png",
+             "importance":"high"
           },
           {
             "id":"68",
              "question":"Пуасонова распределба - X ~ P(λ)",
              "answer":"X - број на независни настани кои се појавуваат во единица време. λ > 0 (λ е просечен број на настани).",
              "imagefront":"",
-             "imageback":"https://i.imgur.com/sMpmfOx.png"
+             "imageback":"https://i.imgur.com/sMpmfOx.png",
+             "importance":"high"
           },
           {
-            "id":"",
-             "question":"",
-             "answer":"",
+            "id":"69",
+             "question":"Густина на распределба",
+             "answer":"Нека х, х + ∆x ∈ (a, b) и нека ∆x > 0. Ако постои границата подолу, тогаш p(x) се нарекува густина на распределба на веројатностите на случајната променлива или кратко густина на X." ,
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/16UoTD6.png",
+             "importance":"mid"
           },
           {
-            "id":"",
-             "question":"",
-             "answer":"",
+            "id":"70",
+             "question":"Ако случајната променлива Х е зададена со нејзината функција на распределба F(x), тогаш густината на Х може да се изрази...?",
+             "answer":"" ,
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/JOU0MqJ.png",
+             "importance":"mid"
           },
           {
-            "id":"",
-             "question":"",
-             "answer":"",
+            "id":"71",
+             "question":"Случајна променлива од апсолутно непрекинат тип",
+             "answer":"Случајната променлива Х е од апсолутно непрекинат тип, ако постои интеграбилна функција p(x) т.ш. функцијата на распределба на Х може да се претстави како:" ,
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/0pr3uKN.png",
+             "importance":"mid"
           },
           {
-            "id":"",
-             "question":"",
-             "answer":"",
+            "id":"72",
+             "question":"Својства на густина",
+             "answer":"Нека Х е случајна променлива од апсолутно непрекинат тип со густина на распределба p(x). Тогаш:",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/5ZhQ4eY.png",
+             "importance":"high"
           },
           {
-            "id":"",
-             "question":"",
+            "id":"73",
+             "question":"Доказ на прво својство на густина",
              "answer":"",
+             "imagefront":"https://i.imgur.com/k2Dsw0n.png",
+             "imageback":"https://i.imgur.com/ENkCRvx.png",
+             "importance":"mid"
+          },
+          {
+            "id":"74",
+             "question":"Доказ на второ својство на густина",
+             "answer":"",
+             "imagefront":"https://i.imgur.com/D88LxRo.png",
+             "imageback":"https://i.imgur.com/pnLC6fU.png",
+             "importance":"mid"
+          },
+          {
+            "id":"75",
+             "question":"Доказ на трето својство на густина",
+             "answer":"",
+             "imagefront":"https://i.imgur.com/IggM4mX.png",
+             "imageback":"https://i.imgur.com/FbBPcwv.png",
+             "importance":"mid"
+          },
+          {
+            "id":"76",
+             "question":"Рамномерна распределба на интервал (a,b) - X∼U(a, b)",
+             "answer":"Рамномерната распределба се користи кога одредена вредност се избира на случаен начин од даден интервал. Веројатноста се одредува само со помош на должината на тој интервал, но не и со локацијата на избраната вредност.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/IM8J3NV.png",
+             "importance":"high"
+          },
+          {
+            "id":"77",
+             "question":"Експоненцијална распределба - X∼E(λ)",
+             "answer":"Експоненцијалната распределба често се користи за моделирање на време.",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/UmClAlf.png",
+             "importance":"high"
+          },
+          {
+            "id":"78",
+             "question":"Нормална распределба - X~N(µ,σ<sup>2</sup>)",
+             "answer":"Случајната променлива X има нормална распределба со параметри µ и σ<sup>2</sup>, ако е непрекината со густина на распределба:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/jbEb0sD.png",
+             "importance":"high"
+          },
+          {
+            "id":"79",
+             "question":"Гама распределба - X∼Γ(α, β)",
+             "answer":"Кога некоја процедура се состои од α независни чекори и за секој чекор е потребно експоненцијална (1/β) количина на време на извршување, тогаш вкупното време има Гама распределба со параметри α и β. Да воочиме дека ако во густината на гама распределба ставиме α = 1 и β = 1/λ тогаш густината добива облик на експоненцијална E(λ) распределба.",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/9B0NCf2.png",
+             "importance":"high"
+          },
+          {
+            "id":"80",
+             "question":"Кошиева распределба (треба да си несреќа да ти се падне)",
+             "answer":"Случајната променлива Х има Кошиева распределба ако нејзината густина е зададена со:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/NV5ZRuL.png",
+             "importance":"none"
           }
        ]
     },
@@ -565,25 +695,100 @@
        "name":"Случајни вектори",
        "sodrzina":[
           {
-            "id":"",
-             "question":"",
+            "id":"81",
+             "question":"Дефиниција на случаен вектор",
+             "answer":"Нека X<sub>1</sub>, X<sub>2</sub>,...,X<sub>n</sub> се случајни променливи дефинирани на ист простор на веројатност (Ω,F,P). Подредената n-торка X=(X<sub>1</sub>, X<sub>2</sub>,...,X<sub>n</sub>) се нарекува случаен вектор или повеќе димензионална случајна променлива. Случајниот вектор е од дискретен тип ако постои дискретно множество R<sub>X</sub> ⊆ R<sup>n</sup> така што P{ X ∈  R<sub>X</sub><sup>C</sup>} = 0. Случајниот вектор се определува со множество вредности R<sub>X</sub> и со веројатностите:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/0L0iHaL.png",
+             "importance":"high"
+          },
+          {
+            "id":"82",
+             "question":"Функција на распределба на случаен вектор",
+             "answer":"Функцијата на распределба на случајниот вектор X=(X<sub>1</sub>, X<sub>2</sub>,...,X<sub>n</sub>) е функцијата F: R<sup>2</sup> -> R дефинирана со:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/MbOGrXw.png",
+             "importance":"mid"
+          },
+          {
+            "id":"83",
+             "question":"Веројатност на правоаголник",
+             "answer":"Ако F(x,y) е функција на распределба на дводимензионалниот случаен вектор (X,Y), тогаш за a < b и c < d, точно е равенството:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/MfDcgbr.png",
+             "importance":"low"
+          },
+          {
+            "id":"84",
+             "question":"Доказ на веројатност на правоаголник",
              "answer":"",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/116OUxl.png",
+             "importance":"low"
+          },
+          {
+            "id":"85",
+             "question":"Својства на функција на распределба",
+             "answer":"Ако F(x,y) е функција на распределба на случајниот вектор (X,Y), тогаш F ги има следните својства:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/Je51EDc.png",
+             "importance":"mid"
+          },
+          {
+            "id":"86",
+             "question":"Врска помеѓу закон на распределба и функција на распределба на случаен вектор (X,Y)",
+             "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/lT5R3BP.png",
+             "importance":"low"
+          },
+          {
+            "id":"87",
+             "question":"Врска помеѓу функција на распределба и закон на распределба на случаен вектор (X,Y)",
+             "answer":"",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/NSNf5md.png",
+             "importance":"low"
+          },
+          {
+            "id":"88",
+             "question":"Маргинални распределби и маргинални функции на распределба",
+             "answer":"Маргинални распределби на X и Y се распределбите на секоја од променливите X и Y поединечно. Од друга страна, маргиналната функција на распределба за една од променливите во векторот се добива како лимес од заедничката функција на распределба кога ќе се пушти аргументот соодветен на другата променлива да тежи кон +∞",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/y3TftpC.png",
+             "importance":"low"
+          },
+          {
+            "id":"89",
+             "question":"Условни распределби",
+             "answer":"Ако (X, Y) е случаен вектор од дискретен тип, тогаш условната распределба на Х при услов {Y = y<sub>i</sub>} се определува со:",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/exXTplA.png",
+             "importance":"low"
+          },
+          {
+            "id":"90",
+             "question":"Случаен вектор од апсолутно непрекинат тип",
+             "answer":"Случајниот вектор (X,Y) е од апсолутно непрекинат тип, ако постои ненегативна интеграбилна функција p(x,y), x,y ∈ R таква што",
+             "imagefront":"",
+             "imageback":"https://i.imgur.com/elxeFkm.png",
+             "importance":"mid"
+          },
+          {
+            "id":"91",
+             "question":"Независност на случајни променливи",
+             "answer":"Случајните променливи X и Y се независни акко заедничката функција на распределба на векторот (X,Y) може да се претстави како производ на маргиналните функции на распределба на случајните променливи X и Y, односно <p style='text-align:center;'>F(x,y) = F<sub>X</sub>(x)F<sub>Y</sub>(y)</p>",
+             "imagefront":"",
+             "imageback":"",
+             "importance":"mid"
           },
           {
             "id":"",
-             "question":"",
-             "answer":"",
+             "question":"Зошто ги нема сите слајдови за случајни вектори од апсолутно непрекинат тип?",
+             "answer":"Затоа што изгледаат како сликава подолу и не се паѓаат",
              "imagefront":"",
-             "imageback":""
-          },
-          {
-            "id":"",
-             "question":"",
-             "answer":"",
-             "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/ZC3n5tp.png",
+             "importance":"none"
           }
        ]
     },
@@ -593,26 +798,29 @@
        "lessonid":"6.",
        "name":"Функции од случајни променливи",
        "sodrzina":[
-          {
-            "id":"",
-             "question":"",
-             "answer":"",
+        {
+            "id":"92",
+             "question":"Функција од случајна променлива",
+             "answer":"Нека Х е дадена случајна променлива со позната распределба и нека f:R->R е дадена функција. Ако Y=f(X), тогаш и Y е случајна променлива. <p>Нека  Х  е  дискретна  случајна  променлива  со  множество  вредности  Rx={x<sub>1</sub>,x<sub>2</sub>,...} (множеството вредности е дискретно ) и  веројатности  p<sub>i</sub>=P{X=x<sub>i</sub>}. </p> Случајната  променлива  Y  ќе  прима  вредности  од  R<sub>Y</sub>={y<sub>1</sub>,y<sub>2</sub>,...},  каде  y<sub>i</sub>=f(x<sub>i</sub>) пришто  веројатностите  на  вредностите  од  R<sub>Y</sub>={y<sub>1</sub>,y<sub>2</sub>,...} каде y<sub>i</sub>=f(x<sub>i</sub>) се определуваат во зависност од тоа кој од двата  случаи е задоволен:",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/0Pp2kII.png",
+             "importance":"high"
           },
           {
-            "id":"",
-             "question":"",
+            "id":"93",
+             "question":"Нека Х e случајна променлива од апсолутно непрекинат тип која прима вредности од интервалот (a,b) (може a = −∞ или b = +∞ или и двете). Ако f е строго монотона функција и има непрекинат извод на (a,b), тогаш густината на распределбата на Y=f(X) се определува со:",
              "answer":"",
              "imagefront":"",
-             "imageback":""
+             "imageback":"https://i.imgur.com/Su85vOZ.png",
+             "importance":"mid"
           },
           {
-            "id":"",
-             "question":"",
-             "answer":"",
+            "id":"94",
+             "question":"Теорема за независност на функции од независни случајни променливи",
+             "answer":"Нека Х и Y се независни случајни променливи, а f и g се функции од R во R. Тогаш и случајните променливи f(X) и g(Y) се независни.",
              "imagefront":"",
-             "imageback":""
+             "imageback":"",
+             "importance":"mid"
           }
        ]
     },    
@@ -624,25 +832,13 @@
         "sodrzina":[
            {
             "id":"",
-              "question":"",
-              "answer":"",
+              "question":"Зошто нема формули",
+              "answer":"не сум стигнала да ги направам :/",
               "imagefront":"",
-              "imageback":""
-           },
-           {
-            "id":"",
-              "question":"",
-              "answer":"",
-              "imagefront":"",
-              "imageback":""
-           },
-           {
-            "id":"",
-              "question":"",
-              "answer":"",
-              "imagefront":"",
-              "imageback":""
+              "imageback":"",
+              "importance":"none"
            }
+           
         ]
      }
  ]

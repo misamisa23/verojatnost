@@ -3,7 +3,7 @@
         <div @click="isToggle=!isToggle" v-bind:style="{backgroundColor: colorFront, color: colorTextFront}" v-show="!isToggle" class="animated flipInX flashcard">
             <div class="card-header"> {{headerFront}} </div>
             <div class="card-content center">
-                <p v-html="front" v-bind:style="{fontSize: textSizeFront,fontWeight: 'bold'}"></p>
+                <span v-bind:class="[{dot:true}, importance]"></span><span v-html="front" v-bind:style="{fontSize: textSizeFront,fontWeight: 'bold'}"></span>
                 <img v-if="imgFront!=''" :src="imgFront">
             </div>
             <div class="card-footer">{{footerFront}}</div>
@@ -80,6 +80,10 @@ export default {
         footerBack: {
             type: String,
             default: 'Click to show Front'
+        },
+        importance: {
+            type: String,
+            default: 'low'
         }
 
 
@@ -87,10 +91,29 @@ export default {
 }
 </script>
 <style scoped>
+.dot {
+    height: 7px;
+  width: 7px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  margin: 7px 8px 3px 5px;
+}
 .center {
     text-align: center;
 }
-
+.low {
+    background-color:green;
+}
+.mid {
+    background-color:goldenrod;
+}
+.high {
+    background-color:#cc0011;
+}
+.none {
+    background-color: none;
+}
 .left {
     text-align: left;
 }
@@ -125,7 +148,7 @@ export default {
     animation-fill-mode: both;
 }
 .card-header {
-    /* padding-bottom: 15px; */
+    padding-bottom: 15px;
 }
 
 .card-footer {
