@@ -25,7 +25,8 @@
                 footerBack="кликни за да затвориш"
                 :front="value.sodrzina[k].question" 
                 :back="value.sodrzina[k].answer"
-                :importance="value.sodrzina[k].importance">
+                :importance="value.sodrzina[k].importance"
+                :main-toggle="toggleSwitch">
                 </vue-flashcard>
               </div>
           
@@ -60,7 +61,8 @@ export default {
       openedLessonName: null,
       openedLessonUseful: null,
       keys: null,
-      showDef: []
+      showDef: [],
+      toggleSwitch: false
     }
   },
   components : { 
@@ -89,8 +91,12 @@ export default {
       this.showLesson = true;
       this.scrollToTop();
       // this.openedLessonName = lekcija.name;
+      
     },
 
+    resetToggle() {
+      this.toggleSwitch=false;
+    },
     backToMenu(){
       this.showLesson = false;
       this.showMenu = true;
@@ -101,6 +107,7 @@ export default {
     
     nextLesson(){
         let last = this.material[Object.keys(this.material)[Object.keys(this.material).length - 1]] 
+        this.resetToggle()
         if (Number(this.openedLessonUseful) < Number(last.usefulid))
         this.openLesson(String(Number(this.openedLessonUseful) + 1))
         else

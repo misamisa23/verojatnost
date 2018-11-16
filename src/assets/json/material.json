@@ -828,15 +828,207 @@
         "brojpredavanje":"Екстра",
         "usefulid":"8",
         "lessonid":"*",
-        "name":"Формули",
+        "name":"Формули - корисно за задачи",
         "sodrzina":[
            {
-            "id":"",
-              "question":"Зошто нема формули",
-              "answer":"не сум стигнала да ги направам :/",
+            "id":"95",
+              "question":"Варијации со повторување",
+              "answer":"",
               "imagefront":"",
-              "imageback":"",
-              "importance":"none"
+              "imageback":"https://i.imgur.com/dZva54N.png",
+              "importance":"mid"
+           },
+           {
+            "id":"96",
+              "question":"Варијации без повторување",
+              "answer":"забелешка: најверојатно не треба да има црта на V затоа што тоа означува повторување. Можеби е грешка во аудиториските",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/ERhyraD.png",
+              "importance":"mid"
+           },
+           {
+            "id":"97",
+              "question":"Пермутации без повторување",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/Nn0WzaQ.png",
+              "importance":"mid"
+           },
+           {
+            "id":"98",
+              "question":"Пермутации со повторување",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/rjRcBGk.png",
+              "importance":"low"
+           },
+           {
+            "id":"99",
+              "question":"Комбинации без повторување",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/fvrqrzy.png",
+              "importance":"high"
+           },
+           {
+            "id":"100",
+              "question":"Условна веројатност на настан А при услов В",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/DW3goEX.png",
+              "importance":"high"
+           },
+           {
+            "id":"101",
+              "question":"Производ на настани изразен преку условни веројатности",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/pa9mNX4.png",
+              "importance":"mid"
+           },
+           {
+            "id":"102",
+              "question":"Производ на n настани (chain rule)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/utqv21f.png",
+              "importance":"mid"
+           },
+           {
+            "id":"103",
+              "question":"Проверка за независност на настани A и В",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/4EMewZI.png",
+              "importance":"mid"
+           },
+           {
+            "id":"104",
+              "question":"Тотална веројатност со n исклучувачки хипотези",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/XHVb5xL.png",
+              "importance":"high"
+           },
+           {
+            "id":"105",
+              "question":"Бајесови формули",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/ULkwrUy.png",
+              "importance":"high"
+           },
+           {
+            "id":"106",
+              "question":"Бернулиева шема",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/S0FqLko.png",
+              "importance":"high"
+           },
+           {
+            "id":"107",
+              "question":"Бернулиева распределба (Индикатор на настан)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/YVBSOAE.png",
+              "importance":"high"
+           },
+           {
+            "id":"108",
+              "question":"Биномна распределба - X~B(n, p)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/GwaC8oB.png",
+              "importance":"high"
+           },
+           {
+            "id":"109",
+              "question":"Рамномерна распределба",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/xiTWsVb.png",
+              "importance":"mid"
+           },
+           {
+            "id":"110",
+              "question":"Геометриска распределба - X~Geo(p) ",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/ZejTfwe.png",
+              "importance":"mid"
+           },
+           {
+            "id":"111",
+              "question":"Негативна биномна распределба - X~NB(k, p)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/rILhaUR.png",
+              "importance":"mid"
+           },
+           {
+            "id":"112",
+              "question":"Пуасонова распределба - X~P(λ)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/vmwgRUN.png",
+              "importance":"high"
+           },
+           {
+            "id":"113",
+              "question":"Рамномерна распределба на интервал",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/PS1cSYU.png",
+              "importance":"low"
+           },
+           {
+            "id":"114",
+              "question":"Експоненцијална распределба - X~E(λ)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/ocW8rWi.png",
+              "importance":"mid"
+           },
+           {
+            "id":"115",
+              "question":"Нормална распределба - X~N(µ,σ<sup>2</sup>)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/5C4RUeL.png",
+              "importance":"high"
+           },
+           {
+            "id":"116",
+              "question":"Гама распределба:",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/VcQHJTU.png",
+              "importance":"mid"
+           },
+           {
+            "id":"117",
+              "question":"Условна распределба кај вектори",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/NpqAn8A.png",
+              "importance":"high"
+           },
+           {
+            "id":"118",
+              "question":"Х е дискретна случајна променлива. Пресметај веројатност на Y=f(X)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/me2cb1j.png",
+              "importance":"mid"
+           },
+           {
+            "id":"119",
+              "question":"Х е случајна променлива од апсолутно непрекинат тип. Пресметај веројатност на Y=f(X)",
+              "answer":"",
+              "imagefront":"",
+              "imageback":"https://i.imgur.com/wZOIBi0.png",
+              "importance":"high"
            }
            
         ]

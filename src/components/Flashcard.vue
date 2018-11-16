@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div @click="isToggle=!isToggle" v-bind:style="{backgroundColor: colorFront, color: colorTextFront}" v-show="!isToggle" class="animated flipInX flashcard">
+        <div @click="mainToggle=!mainToggle" v-bind:style="{backgroundColor: colorFront, color: colorTextFront}" v-show="!mainToggle" class="animated flipInX flashcard">
             <div class="card-header"> {{headerFront}} </div>
             <div class="card-content center">
                 <span v-bind:class="[{dot:true}, importance]"></span><span v-html="front" v-bind:style="{fontSize: textSizeFront,fontWeight: 'bold'}"></span>
@@ -8,7 +8,7 @@
             </div>
             <div class="card-footer">{{footerFront}}</div>
         </div>
-        <div @click="isToggle=!isToggle" v-bind:style="{backgroundColor: colorBack, color: colorTextBack}" v-show="isToggle" class="animated flipInX flashcard">
+        <div @click="mainToggle=!mainToggle" v-bind:style="{backgroundColor: colorBack, color: colorTextBack}" v-show="mainToggle" class="animated flipInX flashcard">
             <div class="card-header"> {{headerBack}}</div>
             <div class="card-content left">
                 <p v-html="back" v-bind:style="{fontSize: textSizeBack, fontWeight: 'bold'}"></p>
@@ -84,10 +84,18 @@ export default {
         importance: {
             type: String,
             default: 'low'
-        }
-
-
-    }
+        },
+        mainToggle: {
+            type: Boolean,
+            default: false,
+        },
+         watch: {
+    // whenever question changes, this function will run
+    // mainToggle: function (newToggle) {
+    //   this.isToggle = newToggle
+    // }
+  },
+}
 }
 </script>
 <style scoped>
