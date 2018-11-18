@@ -1,39 +1,49 @@
 <template>
 <div>
-  <div v-if="showMenu">
-    <h1>{{ msg }}</h1>
-    <div v-for="(value, key) in material" :key="key">
-          <p @click="openLesson(value.usefulid)" class="lekcija" >{{ value.lessonid }} {{ value.name }}</p>
+  <div v-if="showSubjects">
+    <h1>Одберете предмет</h1>
+    <div v-for="(value, key) in predmeti" :key="key">
+          <p @click="openSubject(value.id)" class="lekcija" >{{ value.predmet}}</p>
   </div>
+  </div>
+  <div v-if="showMenu">
+    <div v-for="(value, key) in material.filter(item => item.id == openedSubject)" :key="key">
+       <h1>{{value.predmet}}</h1>
+          <div v-for="(v, k) in value.everything" :key="k">
+            <!-- v:{{v}} k: {{k}} -->
+          <p @click="openLesson(v.usefulid)" class="lekcija" >{{ v.lessonid }} {{ v.name }}</p>
+  </div>
+   </div>
+   <span @click="backToMain()" class="lekcija spacing">Назад кон предмети</span> 
   </div>
 
     <div v-if="showLesson">
       
-      <div v-for="(value, key) in material.filter(item => item.usefulid == openedLessonUseful)" :key="key">
-        <h2 class="inline">{{value.lessonid}} {{value.name}}</h2> 
-      <p class="center-align"><span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон менито </span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span></p>
-<div v-for="(prasanje, k) in value.sodrzina" :key="k">
+      
+        <h2 class="inline">{{selectedLesson.lessonid}} {{selectedLesson.name}}</h2> 
+      <p class="center-align"><span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон лекции</span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span></p>
+<div v-for="(prasanje, k) in selectedLesson.sodrzina" :key="k">
       
                 <vue-flashcard 
-                :imgBack="value.sodrzina[k].imageback"
-                :imgFront="value.sodrzina[k].imagefront" 
+                :imgBack="selectedLesson.sodrzina[k].imageback"
+                :imgFront="selectedLesson.sodrzina[k].imagefront" 
                 headerFront="Прашање" 
                 textSizeFront="1.3em" 
                 textSizeBack="1.3em" 
                 headerBack="Одговор" 
                 footerFront="кликни за да провериш" 
                 footerBack="кликни за да затвориш"
-                :front="value.sodrzina[k].question" 
-                :back="value.sodrzina[k].answer"
-                :importance="value.sodrzina[k].importance"
+                :front="selectedLesson.sodrzina[k].question" 
+                :back="selectedLesson.sodrzina[k].answer"
+                :importance="selectedLesson.sodrzina[k].importance"
                 :main-toggle="toggleSwitch">
                 </vue-flashcard>
               </div>
           
 
-      </div>
   
-      <p class="center-align"><span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон менито </span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span></p>
+  
+      <p class="center-align"><span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон лекции </span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span></p>
     
             
     </div>
@@ -42,90 +52,121 @@
 </template>
 
 <script>
-import Material from "../assets/json/material.json"
-import vueFlashcard from './Flashcard.vue'
-import BackToTop from './BackToTop.vue'
-
+import Material from "../assets/json/material.json";
+import Predmeti from "../assets/json/predmeti.json";
+import vueFlashcard from "./Flashcard.vue";
+import BackToTop from "./BackToTop.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   props: {
     msg: String
   },
   data() {
     return {
       material: Material,
-      showMenu: true,
+      predmeti: Predmeti,
+      showMenu: false,
+      showSubjects: true,
+      openedSubject: null,
       showLesson: false,
       openedLesson: null,
       openedLessonName: null,
       openedLessonUseful: null,
       keys: null,
       showDef: [],
-      toggleSwitch: false
-    }
+      toggleSwitch: false,
+      wholeLesson: []
+    };
   },
-  components : { 
+  components: {
     vueFlashcard,
     BackToTop
-     },
-  computed: {
-   
-  
-     
   },
-  mounted: function(){
+  computed: {
+    // a computed getter
+    selectedSubject: function() {
+      // `this` points to the vm instance
+      return this.material.filter(item => item.id == this.openedSubject);
+    },
+
+    selectedLesson: function() {
+      // `this` points to the vm instance
+
+      for (var i = 0; i < this.selectedSubject[0].everything.length; i++) {
+        if (
+          this.selectedSubject[0].everything[i].usefulid ==
+          this.openedLessonUseful
+        ) {
+          return this.selectedSubject[0].everything[i];
+        }
+      }
+    }
+  },
+
+  mounted: function() {
     // console.log(this.chapters)
 
-    this.keys = Object.keys( this.material[0] );
+    this.keys = Object.keys(this.material[0]);
   },
   methods: {
     scrollToTop() {
-                window.scrollTo(0,0);
-           },
-           
-    openLesson(id){
+      window.scrollTo(0, 0);
+    },
+
+    openLesson(id) {
       this.showMenu = false;
       // this.openedLesson = lekcija.lessonid;
       this.openedLessonUseful = id;
       this.showLesson = true;
       this.scrollToTop();
       // this.openedLessonName = lekcija.name;
-      
+    },
+    openSubject(id) {
+      this.showSubjects = false;
+      this.showMenu = true;
+      // this.openedLesson = lekcija.lessonid;
+      this.openedSubject = id;
+      this.scrollToTop();
+      // this.openedLessonName = lekcija.name;
     },
 
     resetToggle() {
-      this.toggleSwitch=false;
+      this.toggleSwitch = false;
     },
-    backToMenu(){
+    backToMenu() {
       this.showLesson = false;
       this.showMenu = true;
       this.openedLesson = null;
       this.openedLessonName = null;
       this.openedLessonUseful = null;
     },
-    
-    nextLesson(){
-        let last = this.material[Object.keys(this.material)[Object.keys(this.material).length - 1]] 
-        this.resetToggle()
-        if (Number(this.openedLessonUseful) < Number(last.usefulid))
-        this.openLesson(String(Number(this.openedLessonUseful) + 1))
-        else
-        this.openLesson(this.openedLessonUseful)
+    backToMain() {
+      this.showLesson = false;
+      this.showMenu = false;
+      this.openedLesson = null;
+      this.openedLessonName = null;
+      this.openedLessonUseful = null;
+      this.selectedSubject = [];
+      this.selectedLesson = [];
+      this.showSubjects = true;
     },
-    prevLesson(){
-        if (Number(this.openedLessonUseful) > 1)
-        this.openLesson(String(Number(this.openedLessonUseful) - 1))
-        else
-        this.openLesson(this.openedLessonUseful)
-       
+
+    nextLesson() {
+      let last = this.selectedSubject[0].kolkupredavanja;
+      this.resetToggle();
+
+      if (Number(this.openedLessonUseful) < last)
+        this.openLesson(String(Number(this.openedLessonUseful) + 1));
+      else this.openLesson(this.openedLessonUseful);
+    },
+    prevLesson() {
+      if (Number(this.openedLessonUseful) > 1)
+        this.openLesson(String(Number(this.openedLessonUseful) - 1));
+      else this.openLesson(this.openedLessonUseful);
     }
-    
-
-   }
-
-  
-}
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -134,31 +175,31 @@ h3 {
   margin: 40px 0 0;
 }
 .predavanje {
-  color:black;
+  color: black;
   font-style: italic;
   font-size: 16px;
 }
-.center-align{
-  text-align:center;
+.center-align {
+  text-align: center;
 }
 body {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 .lekcija {
   font-size: 14px;
   text-decoration: underline;
-  color:rgb(9, 105, 150);
+  color: rgb(9, 105, 150);
   cursor: pointer;
   font-weight: 600;
-  display:inline-block;
+  display: inline-block;
 }
 
 .term {
   text-decoration: underline;
   cursor: pointer;
   font-weight: 600;
-  color:rgb(23, 146, 70);
+  color: rgb(23, 146, 70);
 }
 .spacing {
   margin: 5px;

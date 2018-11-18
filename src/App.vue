@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Home msg="Веројатност и статистика"/>
+    <Home/>
   </div>
 </template>
 
