@@ -7,7 +7,7 @@
   </div>
   </div>
   <div v-if="showMenu">
-    <div v-for="(value, key) in material.filter(item => item.id == openedSubject)" :key="key">
+    <div v-for="(value, key) in this.selectedSubject" :key="key">
        <h1>{{value.predmet}}</h1>
           <div v-for="(v, k) in value.everything" :key="k">
             <!-- v:{{v}} k: {{k}} -->
@@ -84,24 +84,44 @@ export default {
     BackToTop
   },
   computed: {
-    // a computed getter
-    selectedSubject: function() {
-      // `this` points to the vm instance
+  
+  
+    selectedSubject: {
+    // getter
+    get: function () {
+      if (this.openedSubject){
       return this.material.filter(item => item.id == this.openedSubject);
+      }else {
+        return null;
+      }
     },
-
-    selectedLesson: function() {
-      // `this` points to the vm instance
-
-      for (var i = 0; i < this.selectedSubject[0].everything.length; i++) {
+    // setter
+    set: function (newValue) {
+      this.openedSubject = newValue;
+    }
+  },
+   selectedLesson: {
+    // getter
+    get: function () {
+      if (this.selectedSubject[0].everything.length > 0){
+      
+       for (var i = 0; i < this.selectedSubject[0].everything.length; i++) {
         if (
-          this.selectedSubject[0].everything[i].usefulid ==
-          this.openedLessonUseful
-        ) {
+          this.selectedSubject[0].everything[i].usefulid == this.openedLessonUseful) {
           return this.selectedSubject[0].everything[i];
         }
       }
+
+      }else {
+        return null;
+      }
+    },
+    // setter
+    set: function (newValue) {
+      this.openedLessonUseful = newValue;
     }
+  }
+    
   },
 
   mounted: function() {
@@ -117,7 +137,7 @@ export default {
     openLesson(id) {
       this.showMenu = false;
       // this.openedLesson = lekcija.lessonid;
-      this.openedLessonUseful = id;
+      this.selectedLesson = id;
       this.showLesson = true;
       this.scrollToTop();
       // this.openedLessonName = lekcija.name;
@@ -126,7 +146,7 @@ export default {
       this.showSubjects = false;
       this.showMenu = true;
       // this.openedLesson = lekcija.lessonid;
-      this.openedSubject = id;
+      this.selectedSubject = id;
       this.scrollToTop();
       // this.openedLessonName = lekcija.name;
     },
@@ -139,14 +159,14 @@ export default {
       this.showMenu = true;
       this.openedLesson = null;
       this.openedLessonName = null;
-      this.openedLessonUseful = null;
+      this.selectedLesson = null;
     },
     backToMain() {
       this.showLesson = false;
       this.showMenu = false;
       this.openedLesson = null;
       this.openedLessonName = null;
-      this.openedLessonUseful = null;
+      this.selectedLesson = null;
       this.selectedSubject = [];
       this.selectedLesson = [];
       this.showSubjects = true;
