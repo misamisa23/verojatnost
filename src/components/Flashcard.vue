@@ -5,6 +5,7 @@
             <div class="card-content center">
                 <span v-bind:class="[{dot:true}, importance]"></span><span v-html="front" v-bind:style="{fontSize: textSizeFront,fontWeight: 'bold'}"></span>
                 <img v-if="imgFront!=''" :src="imgFront">
+
             </div>
             <div class="card-footer">{{footerFront}}</div>
         </div>
@@ -16,6 +17,9 @@
             </div>
             <div class="card-footer">{{footerBack}}</div>
         </div>
+       
+       <span class="kopche" @click='emit'><button  v-show="!isOpen" v-on:click='isOpen = !isOpen'>Зачувај</button>
+<button  class="zachuvano" v-show="isOpen" v-on:click='isOpen = !isOpen'>Зачувано</button></span>
     </div>
 </template>
 <script>
@@ -23,6 +27,7 @@ export default {
     data() {
         return {
             isToggle: false,
+            isOpen: false
         }
     }, props: {
         imgFront: {
@@ -89,13 +94,35 @@ export default {
             type: Boolean,
             default: false,
         },
+        cardID: {
+            type: String,
+            default: "0",
+        },
+        saved:{
+            type: Array
+        },
          watch: {
     // whenever question changes, this function will run
-    // mainToggle: function (newToggle) {
-    //   this.isToggle = newToggle
+    // changed: function () {
+    //   this.isOpen = this.saved.includes(this.cardID);
     // }
   },
-}
+},
+created: function () {
+this.isOpen = this.saved.includes(this.cardID);
+},
+methods:{
+        toggle: function(){
+            this.isOpen = !this.isOpen
+           
+        },
+        emit: function(){
+            if(this.isOpen)
+             this.$emit('add-to-list', this.cardID)
+             else
+             this.$emit('remove-from-list', this.cardID)
+        }
+    }
 }
 </script>
 <style scoped>
@@ -145,6 +172,7 @@ export default {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
 }
 
 .flashcard:hover {
@@ -192,5 +220,25 @@ export default {
 .flipInX {
     backface-visibility: visible !important;
     animation-name: flipInX;
+}
+button {
+    border-radius: 2px;
+    border: 0;
+    background-color:rgb(46, 169, 226);
+    color:white;
+    font-weight: 600;
+    padding: 5px
+}
+
+.zachuvano {
+   background-color:green;
+}
+
+.kopche{
+    margin-left: 20px;
+    line-height: 180px;
+    display: inline-block;
+    width: 60px;
+    vertical-align: top;
 }
 </style>

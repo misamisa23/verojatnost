@@ -21,3 +21,5 @@ Vue.use(VueAnalytics, {
   id: 'UA-97223615-3',
   router
 })
+
+// Vue.use(require('vue-cookies'))

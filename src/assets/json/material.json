@@ -2,7 +2,7 @@
   {
     "id": "1",
     "predmet": "Веројатност и статистика",
-    "kolkupredavanja": "8",
+    "kolkupredavanja": "14",
     "everything": [
       {
         "brojpredavanje": "Предавање 1",
@@ -829,213 +829,783 @@
         ]
       },
       {
-        "brojpredavanje": "Екстра",
+        "brojpredavanje": "Предавање 7",
         "usefulid": "8",
-        "lessonid": "*",
-        "name": "Формули - корисно за задачи",
+        "lessonid": "7.1",
+        "name": "Бројни карактеристики на случајни променливи",
         "sodrzina": [
           {
             "id": "95",
-            "question": "Варијации со повторување",
+            "question": "Дефиниција на математичко очекување (EX)",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/dZva54N.png",
-            "importance": "mid"
+            "imageback": "https://i.imgur.com/lJ3eJUJ.png",
+            "importance": "high"
           },
           {
             "id": "96",
-            "question": "Варијации без повторување",
-            "answer": "забелешка: најверојатно не треба да има црта на V затоа што тоа означува повторување. Можеби е грешка во аудиториските",
+            "question": "Дефиниција на математичко очекување за дискретна случајна променлива со преброиво множество вредности",
+            "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/ERhyraD.png",
+            "imageback": "https://i.imgur.com/IfnMD7w.png",
             "importance": "mid"
           },
           {
             "id": "97",
-            "question": "Пермутации без повторување",
+            "question": "Дефиниција на математичко очекување за случајна променлива од апсолутно-непрекинат тип",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/Nn0WzaQ.png",
+            "imageback": "https://i.imgur.com/yQXpzHw.png",
             "importance": "mid"
           },
           {
             "id": "98",
-            "question": "Пермутации со повторување",
+            "question": "Својства на математичко очекување",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/rjRcBGk.png",
-            "importance": "low"
+            "imageback": "https://i.imgur.com/jVOpS74.png",
+            "importance": "high"
           },
           {
             "id": "99",
-            "question": "Комбинации без повторување",
+            "question": "Дефиниција на дисперзија (варијанса)",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/fvrqrzy.png",
+            "imageback": "https://i.imgur.com/5bw1Ysz.png",
             "importance": "high"
           },
           {
             "id": "100",
-            "question": "Условна веројатност на настан А при услов В",
+            "question": "Дисперзија на случајна променлива од дискретен тип",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/DW3goEX.png",
+            "imageback": "https://i.imgur.com/l8pl84Z.png",
             "importance": "high"
           },
           {
             "id": "101",
-            "question": "Производ на настани изразен преку условни веројатности",
+            "question": "Дисперзија на случајна променлива од апсолутно-непрекинат тип",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/pa9mNX4.png",
-            "importance": "mid"
+            "imageback": "https://i.imgur.com/XsqKFWM.png",
+            "importance": "high"
           },
           {
             "id": "102",
-            "question": "Производ на n настани (chain rule)",
+            "question": "Својства на дисперзија",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/utqv21f.png",
-            "importance": "mid"
+            "imageback": "https://i.imgur.com/m02PFFv.png",
+            "importance": "high"
           },
           {
             "id": "103",
-            "question": "Проверка за независност на настани A и В",
+            "question": "Изведување на очекување и дисперзија кај Индикатор на настан",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/4EMewZI.png",
+            "imageback": "https://i.imgur.com/vETwOij.png",
             "importance": "mid"
           },
           {
             "id": "104",
-            "question": "Тотална веројатност со n исклучувачки хипотези",
+            "question": "Изведување на очекување и дисперзија кај Биномна распределба",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/XHVb5xL.png",
+            "imageback": "https://i.imgur.com/z93Hg3N.jpg",
             "importance": "high"
           },
           {
             "id": "105",
-            "question": "Бајесови формули",
+            "question": "Изведување на очекување и дисперзија кај Рамномерна распределба на конечно множество вредности",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/ULkwrUy.png",
-            "importance": "high"
+            "imageback": "https://i.imgur.com/o7XPtLO.png",
+            "importance": "mid"
           },
           {
             "id": "106",
-            "question": "Бернулиева шема",
+            "question": "Изведување на очекување и дисперзија кај Пуасонова распределба",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/S0FqLko.png",
-            "importance": "high"
+            "imageback": "https://i.imgur.com/yyVelHU.jpg",
+            "importance": "mid"
           },
           {
             "id": "107",
-            "question": "Бернулиева распределба (Индикатор на настан)",
+            "question": "Изведување на очекување и дисперзија кај рамномерна распределба на интервал",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/YVBSOAE.png",
-            "importance": "high"
+            "imageback": "https://i.imgur.com/e8NZYvu.jpg",
+            "importance": "mid"
           },
           {
             "id": "108",
-            "question": "Биномна распределба - X~B(n, p)",
+            "question": "Изведување на очекување и дисперзија кај Нормална распределба",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/GwaC8oB.png",
-            "importance": "high"
+            "imageback": "https://i.imgur.com/4dqPU46.jpg",
+            "importance": "low"
           },
           {
             "id": "109",
-            "question": "Рамномерна распределба",
+            "question": "Изведување на очекување и дисперзија кај Гама распределба",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/xiTWsVb.png",
-            "importance": "mid"
+            "imageback": "https://i.imgur.com/IltF0Tk.jpg",
+            "importance": "low"
           },
           {
             "id": "110",
-            "question": "Геометриска распределба - X~Geo(p) ",
+            "question": "Изведување на очекување и дисперзија кај Експоненцијална распределба",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/ZejTfwe.png",
-            "importance": "mid"
-          },
+            "imageback": "https://i.imgur.com/J7jJxc3.png",
+            "importance": "low"
+          }
+
+        ]
+      },
+      {
+        "brojpredavanje": "Предавање 7",
+        "usefulid": "9",
+        "lessonid": "7.2",
+        "name": "Моменти на случајни променливи и случајни вектори",
+        "sodrzina": [
           {
             "id": "111",
-            "question": "Негативна биномна распределба - X~NB(k, p)",
+            "question": "Почетен момент од ред k",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/rILhaUR.png",
-            "importance": "mid"
+            "imageback": "https://i.imgur.com/9FSXT8Z.png",
+            "importance": "high"
           },
           {
             "id": "112",
-            "question": "Пуасонова распределба - X~P(λ)",
+            "question": "Централен момент од ред k",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/vmwgRUN.png",
+            "imageback": "https://i.imgur.com/RcjNR92.png",
             "importance": "high"
           },
           {
             "id": "113",
-            "question": "Рамномерна распределба на интервал",
+            "question": "Математично очекување на случаен вектор",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/PS1cSYU.png",
+            "imageback": "https://i.imgur.com/tZiOW8T.png",
             "importance": "low"
           },
           {
             "id": "114",
-            "question": "Експоненцијална распределба - X~E(λ)",
+            "question": "Почетен момент од ред (r,s) за векторот (X,Y)",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/ocW8rWi.png",
-            "importance": "mid"
+            "imageback": "https://i.imgur.com/C8TQFRB.jpg",
+            "importance": "high"
           },
           {
             "id": "115",
-            "question": "Нормална распределба - X~N(µ,σ<sup>2</sup>)",
+            "question": "Централен момент од ред (r,s) за векторот (X,Y)",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/5C4RUeL.png",
+            "imageback": "https://i.imgur.com/veJORJs.jpg",
             "importance": "high"
           },
           {
             "id": "116",
-            "question": "Гама распределба:",
+            "question": "Коваријанса",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/VcQHJTU.png",
-            "importance": "mid"
+            "imageback": "https://i.imgur.com/Kzu1l0m.png",
+            "importance": "high"
           },
           {
             "id": "117",
-            "question": "Условна распределба кај вектори",
+            "question": "Врска помеѓу независност и коваријанса",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/NpqAn8A.png",
+            "imageback": "https://i.imgur.com/glc4Glw.png",
             "importance": "high"
           },
           {
             "id": "118",
-            "question": "Х е дискретна случајна променлива. Пресметај веројатност на Y=f(X)",
+            "question": "Дисперзиона матрица (матрица на варијанси и коваријанси)",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/me2cb1j.png",
-            "importance": "mid"
+            "imageback": "https://i.imgur.com/ga39dsK.png",
+            "importance": "low"
           },
           {
             "id": "119",
-            "question": "Х е случајна променлива од апсолутно непрекинат тип. Пресметај веројатност на Y=f(X)",
+            "question": "Коефициент на корелација",
             "answer": "",
             "imagefront": "",
-            "imageback": "https://i.imgur.com/wZOIBi0.png",
+            "imageback": "https://i.imgur.com/j71MHht.png",
+            "importance": "high"
+          },
+          {
+            "id": "120",
+            "question": "Својства на коефициент на корелација",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/Tyrg9Ul.png",
+            "importance": "mid"
+          },
+          {
+            "id": "122",
+            "question": "Што определува коефициентот на корелација?",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/zNQ4XW2.png",
+            "importance": "high"
+          },
+          {
+            "id": "122",
+            "question": "Што важи за две нормално распределени случајни променливи X и Y?",
+            "answer": "",
+            "imagefront": "https://i.imgur.com/sKBVGKg.png",
+            "imageback": "https://i.imgur.com/rDEApfX.png",
+            "importance": "mid"
+          }
+        ]
+      },
+      {
+        "brojpredavanje": "Предавање 8",
+        "usefulid": "10",
+        "lessonid": "8.1",
+        "name": "Функција изводница",
+        "sodrzina": [
+          {
+            "id": "123",
+            "question": "Дефиниција на функција изводница",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/SarDw9G.png",
+            "importance": "high"
+          },
+          {
+            "id": "124",
+            "question": "Функција изводница на случајна променлива Х од дискретен тип",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/wGvDEzr.png",
+            "importance": "high"
+          },
+          {
+            "id": "125",
+            "question": "Функција изводница на случајна променлива Х од апсолутно-непрекинат тип",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/kq8rkVT.png",
+            "importance": "high"
+          },
+          {
+            "id": "126",
+            "question": "Функција изводница на константа",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/gRVQK6E.png",
+            "importance": "mid"
+          },
+          {
+            "id": "127",
+            "question": "Функција изводница на Индикатор на настан А",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/DjYnKSJ.png",
+            "importance": "mid"
+          },
+          {
+            "id": "128",
+            "question": "Функција изводница на Биномна распределба",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/tlJzSsf.png",
+            "importance": "mid"
+          },
+          {
+            "id": "129",
+            "question": "Функција изводница на Пуасонова распределба",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/f6r74pe.png",
+            "importance": "high"
+          },
+          {
+            "id": "130",
+            "question": "Функција изводница на Нормална нормирана распределба",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/w5QcHSW.jpg",
+            "importance": "mid"
+          },
+          {
+            "id": "131",
+            "question": "Еднозначност на карактеристичната функција",
+            "answer": "Теорема 1: Распределбата на една случајна променлива Х е еднозначно определена од нејзината функција изводница M<sub>X</sub>(t). Оваа теорема покажува дека ако две случајни променливи X и Y имаат еднаква функција изводница, т.е. ако M<sub>X</sub>(t) = M<sub>Y</sub>(t), за секој t, тогаш X и Y имаат иста распределба.",
+            "imagefront": "",
+            "imageback": "",
+            "importance": "mid"
+          },
+          {
+            "id": "132",
+            "question": "Својства на функција изводница",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/KF3OPgG.jpg",
+            "importance": "mid"
+          },
+          {
+            "id": "133",
+            "question": "Врска помеѓу функција изводница и моменти на случајна променлива",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/8rWWlV6.png",
+            "importance": "low"
+          },
+          {
+            "id": "134",
+            "question": "Доказ на врска помеѓу функција изводница и моменти на случајна променлива",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/Ojvn34H.png",
+            "importance": "low"
+          }
+        ]
+      },
+      {
+        "brojpredavanje": "Предавање 8",
+        "usefulid": "11",
+        "lessonid": "8.2",
+        "name": "Гранични теореми",
+        "sodrzina": [
+          {
+            "id": "135",
+            "question": "Конвергенција по веројатност",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/Na34Jfz.png",
+            "importance": "mid"
+          },
+          {
+            "id": "136",
+            "question": "Конвергенција по распределба",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/X2Ht242.png",
+            "importance": "mid"
+          },
+          {
+            "id": "137",
+            "question": "Слаб закон на големите броеви",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/szzqK8m.png",
+            "importance": "high"
+          },
+          {
+            "id": "138",
+            "question": "Правило на три сигми",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/wE23g7j.jpg",
+            "importance": "high"
+          },
+          {
+            "id": "139",
+            "question": "Теорема на Чебишев",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/hxLUDRk.png",
+            "importance": "high"
+          },
+          {
+            "id": "140",
+            "question": "Доказ на Теорема на Чебишев",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/BjyH6zK.jpg",
+            "importance": "high"
+          },
+          {
+            "id": "141",
+            "question": "Последица од Теоремата на Чебишев и нејзин доказ",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/6Nrx1a0.png",
+            "importance": "high"
+          },
+          {
+            "id": "142",
+            "question": "Оправданост на статистичката дефиниција на веројатност (теорема 3)",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/P58MclT.png",
+            "importance": "low"
+          },
+          {
+            "id": "143",
+            "question": "Доказ на горната теорема (3)",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/1c030yQ.jpg",
+            "importance": "low"
+          },
+          {
+            "id": "144",
+            "question": "Локална теорема на Муавр-Лаплас",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/qfMOPh3.png",
+            "importance": "high"
+          },
+          {
+            "id": "145",
+            "question": "Интегрална теорема на Муавр-Лаплас",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/92ShRis.png",
+            "importance": "high"
+          },
+          {
+            "id": "146",
+            "question": "Централна гранична теорема (ЦГТ), Линдерберг-Леви",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/NeiOAUV.png",
+            "importance": "high"
+          },
+          {
+            "id": "147",
+            "question": "Класично неравенство на Чебишев",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/fUIAhzo.png",
             "importance": "high"
           }
         ]
+      },
+      {
+        "brojpredavanje": "Предавање 9",
+        "usefulid": "12",
+        "lessonid": "9.",
+        "name": "Веројатносен модел на примерок",
+        "sodrzina": [
+          {
+            "id": "148",
+            "question": "Што е популација?",
+            "answer": "Резултатите на извршените мерења на еден експеримент се нарекуваат податоци. Ќе ги бележиме со (x1,x2, ...). <br> <br> Токму множеството на сите можни податоци кое ја карактеризира појавата што ја испитуваме е нашето целно множество. <br><br> Ова множество се нарекува популација (понекогаш и самите единки на кои се врши мерењето се нарекуваат популација) <br> <br> Популацијата може да биде конечна или бесконечна, но дури и да е конечна може да биде многу голема и затоа некогаш и не е можно да се соберат сите мерења. ",
+            "imagefront": "",
+            "imageback": "",
+            "importance": "mid"
+          },
+          {
+            "id": "149",
+            "question": "Што е примерок?",
+            "answer": "За да може да се користи за било какво изведување на заклучоци примерокот треба да биде случаен и репрезентативен, односно да претставува популација во мало. <br><br>Случаен примерок е оној во кој секој елемент од популацијата од интерес има исти шанси да биде избран во примерокот. <br><br>Примерокот кој се добива со низа независни и еднакви експерименти се нарекува прост случаен примерок. <br><br>Ова значи дека може да се добијат случајни примероци кои воопшто не се репрезантативни. Но како се зголемува обемот на примерокот тој станува се порепрезентативен. ",
+            "imagefront": "",
+            "imageback": "",
+            "importance": "mid"
+          },
+          {
+            "id": "150",
+            "question": "Веројатносен модел на примерок",
+            "answer": "Секое набљудување од популацијата ќе го сметаме за вредност на случајна променлива X која има некоја распределба F(x) односно закон или густина на распределба p(x) за кои ќе претпоставиме дека припаѓаат на дадена параметарска фамилија распределби, односно податоците од различни мерења ќе ги моделираме со веројатностни модели.<br><br> Според претходната дискусија всушност е дефинирана n – димензионална случајна променлива од n независни еднаквораспределени случајни променливи кои претставуваат независни набљудувања на случајната променлива X. ",
+            "imagefront": "",
+            "imageback": "",
+            "importance": "high"
+          },
+          {
+            "id": "151",
+            "question": "Дефиниција на случаен примерок",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/BctLUsd.png",
+            "importance": "high"
+          },
+          {
+            "id": "152",
+            "question": "Дефиниција на простор на податоци на примерокот",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/z2bNHQQ.png",
+            "importance": "mid"
+          },
+          {
+            "id": "153",
+            "question": "Емпириска распределба на X или функција на распределба на X на примерокот",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/dJvUFYG.png",
+            "importance": "high"
+          },
+          {
+            "id": "154",
+            "question": "Теорема на Гливенко",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/odfvcc1.jpg",
+            "importance": "mid"
+          },
+          {
+            "id": "155",
+            "question": "Дефиниција на статистика",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/2oZdyVq.png",
+            "importance": "high"
+          },
+          {
+            "id": "156",
+            "question": "Просек на примерокот",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/wrWn4Z4.png",
+            "importance": "high"
+          },
+          {
+            "id": "157",
+            "question": "Дисперзија и стандардна девијација на примерокот",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/d0uwQWf.png",
+            "importance": "high"
+          },
+          {
+            "id": "158",
+            "question": "Моменти на случаен примерок",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/GhIVHmG.jpg",
+            "importance": "low"
+          },
+          {
+            "id": "159",
+            "question": "Дефиницја на подредени статистики",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/Q4wfmzt.png",
+            "importance": "high"
+          },
+          {
+            "id": "160",
+            "question": "Дефиницја на распон (опсег) на примерокот",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/v9Db5Et.png",
+            "importance": "high"
+          },
+          {
+            "id": "161",
+            "question": "Квантил или перцентил на примерокот",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/elbIDXu.png",
+            "importance": "high"
+          },
+          {
+            "id": "162",
+            "question": "Својства на просекот на случајниот примерок",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/eRLGZw6.jpg",
+            "importance": "mid"
+          },
+          {
+            "id": "163",
+            "question": "Својства на дисперзијата на случајниот примерок",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/NSXPbGZ.png",
+            "importance": "low"
+          },
+          {
+            "id": "164",
+            "question": "Ако (X<sub>1</sub>, X<sub>2</sub>, ... , X<sub>n</sub>) е случаен примерок со обем n ≥ 2, од нормална распределба N(μ,σ2), тогаш какви распределби имаат неговите статистики и кои се својсвтата кои важат?",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/vRWoqOq.jpg",
+            "importance": "high"
+          },
+          {
+            "id": "165",
+            "question": "Ако X е случајна променлива со функција на распределба F<sub>X</sub>, со математичко очекување μ и дисперзија σ<sup>2</sup>, тогаш просекот на примерокот X има каква распределба?",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/pIEUTjH.png",
+            "importance": "high"
+          },
+          {
+            "id": "166",
+            "question": "Гранична распределба на разлики на просеци на независни големи примероци",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/U0d2Q0P.png",
+            "importance": "low"
+          },
+          {
+            "id": "167",
+            "question": "F –распределба на две дисперзии",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/GVS7DNG.png",
+            "importance": "low"
+          },
+          {
+            "id": "168",
+            "question": "Распределба на подредени статистики",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/j902Vws.jpg",
+            "importance": "low"
+          },
+          {
+            "id": "169",
+            "question": "Студентова Распределба",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/1Jt5YKZ.jpg",
+            "importance": "mid"
+          },
+          {
+            "id": "170",
+            "question": "Фишерова распределба",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "https://i.imgur.com/Gu8fPkk.jpg",
+            "importance": "mid"
+          }
+        ]
+      },
+      {
+        "brojpredavanje": "Предавање 10",
+        "usefulid": "13",
+        "lessonid": "10.1",
+        "name": "Точкасто оценување и својства на оценувачи",
+        "sodrzina": [
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          }
+        ]
+      },
+      {
+        "brojpredavanje": "Предавање 10",
+        "usefulid": "14",
+        "lessonid": "10.2",
+        "name": "Интервали на доверба",
+        "sodrzina": [
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          },
+          {
+            "id": "",
+            "question": "",
+            "answer": "",
+            "imagefront": "",
+            "imageback": "",
+            "importance": ""
+          }
+        ]
       }
+      
     ]
   },
   {
