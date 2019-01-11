@@ -24,7 +24,7 @@
       <p class="center-align"><span @click="prevLesson()" class="lekcija spacing"> Претходна лекција</span> <span @click="backToMenu()" class="lekcija spacing">Назад кон лекции</span>  <span @click="nextLesson()" class="lekcija spacing"> Следна лекција</span></p>
     <!-- <a v-for="name, i in filtri" @click="current = i" :key="i" :class="{current:i == current}">{{name}}</a> -->
       <p class="center-align"><span @click="filterImportance = 'any'" v-bind:class="[{ selected: filterImportance == 'any'}, 'spacing', 'filter']">сите</span> <span @click="filterImportance = 'high'" v-bind:class="[{ selected: filterImportance == 'high'}, 'spacing', 'filter']">само црвени</span>  <span @click="filterImportance = 'mid'" v-bind:class="[{ selected: filterImportance == 'mid'}, 'spacing', 'filter']">само жолти</span> <span @click="filterImportance = 'low'" v-bind:class="[{ selected: filterImportance == 'low'}, 'spacing', 'filter']">само зелени</span></p>
-<div v-for="(prasanje, k) in selectedLesson.sodrzina" :key="k">
+<div class="single-flashcard" v-for="(prasanje, k) in selectedLesson.sodrzina" :key="k">
       
                 <vue-flashcard v-on:add-to-list="AddToList" v-on:remove-from-list="RemoveFromList" v-if="selectedLesson.sodrzina[k].importance == filterImportance || filterImportance == 'any'"
                 :imgBack="selectedLesson.sodrzina[k].imageback"
@@ -372,6 +372,9 @@ body {
 .facebook {
   background: green;
   color: white;
+}
+.single-flashcard {
+  margin-left: 40px;
 }
 
 
