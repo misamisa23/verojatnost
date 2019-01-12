@@ -102,10 +102,28 @@
 
 
     </div>
+
+       <div v-if="openKolok">
+        
+         <div >
+          <span v-for="(v,k) in this.selectedSubject" :key="k"> 
+
+             <div v-for="(val, key) in v.materijali" :key="key">
+
+             <!-- v:  {{val}} k: {{key}} -->
+            <a class="file spacing" :href="`${publicPath}` + val.url"  download> {{val.name}} </a>
+            </div>
+            </span>
+
+         </div>
+
+         <div class="lekcija spacing" @click="backFromMine"> Врати се назад кон предметот </div>   
+       </div>
     <back-to-top text="^"></back-to-top>
 
                     <div v-if='openedSubject && !showSubjects' class="icon-bar">
-  <span @click='openMine' class="facebook">Мои</span> 
+  <span @click='openMine' class="moi">Мои</span> 
+<span @click='openKolokviumi' class="kolokviumi">Колоквиуми</span> 
 
 </div>
   </div>
@@ -141,7 +159,9 @@ export default {
       filterImportance: 'any',
       current:1,
       filtri:['сите','само црвени','само жолти','само зелени'],
-      myQuestions: false
+      myQuestions: false,
+      openKolok: false,
+      publicPath: process.env.BASE_URL
     };
   },
   components: {
@@ -248,6 +268,7 @@ export default {
       this.openedLesson = null;
       this.openedLessonName = null;
       this.selectedLesson = null;
+      this.openKolok = false;
     },
     backToMain() {
       this.showLesson = false;
@@ -258,6 +279,7 @@ export default {
       this.selectedSubject = [];
       this.selectedLesson = [];
       this.showSubjects = true;
+      this.openKolok = false;
     },
 
     nextLesson() {
@@ -282,6 +304,18 @@ export default {
       this.selectedLesson = [];
       this.showSubjects = false;
       this.myQuestions = true;
+      this.openKolok = false;
+    },
+    openKolokviumi() {
+      this.showLesson = false;
+      this.showMenu = false;
+      this.openedLesson = null;
+      this.openedLessonName = null;
+      this.selectedLesson = null;
+      this.selectedLesson = [];
+      this.showSubjects = false;
+      this.myQuestions = false;
+      this.openKolok = true;
     },
     backFromMine(){
       this.showLesson = false;
@@ -292,6 +326,7 @@ export default {
       this.selectedLesson = [];
       this.showSubjects = false;
       this.myQuestions = false;
+      this.openKolok = false;
     },
     saveToStorage(){
       const parsed = JSON.stringify(this.saved);
@@ -322,6 +357,14 @@ body {
   font-size: 14px;
   text-decoration: underline;
   color: rgb(9, 105, 150);
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+}
+.file {
+  font-size: 14px;
+  text-decoration: underline;
+  color:rgb(255, 151, 15) ;
   cursor: pointer;
   font-weight: 600;
   display: inline-block;
@@ -369,8 +412,13 @@ body {
 .icon-bar span:hover {
   background-color: #000;
 }
-.facebook {
+.moi {
   background: green;
+  color: white;
+}
+
+.kolokviumi {
+  background:rgb(255, 151, 15) ;
   color: white;
 }
 .single-flashcard {
