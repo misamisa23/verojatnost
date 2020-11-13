@@ -4,14 +4,10 @@
   </div>
 </template>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z6VGRCB9T"></script>
+
 <script>
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-8Z6VGRCB9T');
 import Home from './components/Home.vue'
 
 export default {
