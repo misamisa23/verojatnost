@@ -17,9 +17,8 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-Vue.use(VueAnalytics, {
-  id: 'UA-97223615-3',
+Vue.use( 
   router
-})
+)
 
 // Vue.use(require('vue-cookies'))
