@@ -153,6 +153,11 @@ methods:{
     text-align: left;
 }
 
+
+.right{
+    
+}
+
 .img-back {
     max-width:80%;
 }
